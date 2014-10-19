@@ -130,9 +130,9 @@ NodeJS
 
 `$ npm install -g ionic`
 
-`$ npm install -g nodemon`
+`$ npm install -g mongo-hacker`
 
-`$ npm install -g sails`
+`$ npm install -g nodemon`
 
 Ruby
 
