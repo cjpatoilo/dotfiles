@@ -116,6 +116,8 @@ NodeJS
 
 `$ npm install -g bower`
 
+`$ npm install -g browserify`
+
 `$ npm install -g cordova`
 
 `$ npm install -g express`
@@ -371,8 +373,38 @@ Make it even easier version control
 ```
 
 
-### 8. Sublime Text
+### 8. Sublime Text 3
+The text editor you'll fall in love with
 
+Install Package Control
+`import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')`
+
+- AutoFileName
+- BracketHighlighter
+- CSS Snippets
+- CSScomb
+- DocBlockr
+- Emmet
+- Gist
+- Git
+- Gitignore
+- Handlebars
+- Highlight Whitespances
+- HTML - CSS - JS Prettify
+- Idiomatic-CSS-Comments-Snippets
+- Jade
+- LoremIpsum
+- Package Control
+- Placeholders
+- PyV8
+- SFTP
+- SideBarEnhancements
+- SublimeTextGitX
+- Tag
+- Theme - Flatland
+- Theme - Soda
+- Theme - SodaSolarizedDark
+- Whitespace
 
 
 ### 9. Vangrant
