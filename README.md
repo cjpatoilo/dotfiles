@@ -1,4 +1,4 @@
-# Dotfiles
+# Patoilo's Dotfiles
 
 Lorem ipsum dolor sit amet, his at constituto appellantur deterruisset, eos et facer aeterno ceteros. Pri ei melius discere detraxit, in suscipit cotidieque pri. Unum vidisse ea sea. Ut pro volumus delectus theophrastus. Id ferri eirmod pertinacia ius. Nam in harum percipit senserit, iracundia efficiendi ea est.
 
