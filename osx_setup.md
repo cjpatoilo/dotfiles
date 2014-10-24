@@ -343,9 +343,15 @@ alias DT='tee ~/Desktop/terminalOut.txt'
 
 
 
-### 7. Git `~/.gitconfig`
+### 7. Git 
 
 Make it even easier version control
+
+`$ git config --global user.name "Your Full Name"`
+
+`$ git config --global user.email "Your Email Address"`
+
+Then open and set this file `~/.gitconfig`
 
 ```
 [user]
