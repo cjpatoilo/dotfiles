@@ -29,7 +29,7 @@ Make sure we’re using the latest Homebrew
 
 `$ brew update`
 
-Essecials
+Essentials
 
 `$ brew install android-sdk`
 
@@ -59,7 +59,7 @@ Remove outdated versions from the cellar
 
 `$ brew cleanup`
 
-Utits
+Utils
 
 `$ brew cask install appcleaner`
 
@@ -111,7 +111,6 @@ Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 
 `$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r`
 
-
 NodeJS
 
 `$ npm install -g bower`
@@ -141,6 +140,7 @@ Ruby
 
 
 ### 4. Install Manually
+
 This is the hardest part.
 
 TweetDeck (https://www.tweetdeck.com/download/mac/latest)
@@ -151,7 +151,7 @@ Adobe Suite (https://www.adobe.com/downloads.html)
 
 ### 5. System
 
-Finder: show all filename extensions
+Finder: show all filenames extensions
 
 `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
@@ -380,6 +380,7 @@ Then open and set this file `~/.gitconfig`
 
 
 ### 8. Sublime Text 3
+
 The text editor you'll fall in love with
 
 Install Package Control
