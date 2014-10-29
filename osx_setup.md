@@ -45,11 +45,11 @@ Essentials
 
 `$ brew install node`
 
-`$ brew install openssl`
-
 `$ brew install postgis`
 
 `$ brew install postgresql`
+
+`$ brew install redis`
 
 `$ brew install wget`
 
