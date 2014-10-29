@@ -67,6 +67,8 @@ Utils
 
 `$ brew cask install google-drive`
 
+`$ brew cask install pomodoro-one`
+
 `$ brew cask install skype`
 
 `$ brew cask install the-unarchiver`
