@@ -59,6 +59,10 @@ Remove outdated versions from the cellar
 
 `$ brew cleanup`
 
+Make sure we’re using the latest Brew Cask
+
+`$ brew cask update`
+
 Utils
 
 `$ brew cask install appcleaner`
@@ -112,6 +116,10 @@ Browsers
 Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 
 `$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r`
+
+Remove outdated versions from the cache
+
+`$ brew cask cleanup`
 
 NodeJS
 
