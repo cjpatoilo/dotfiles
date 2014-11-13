@@ -75,6 +75,8 @@ Utils
 
 `$ brew cask install skype`
 
+`$ brew cask install spotify`
+
 `$ brew cask install the-unarchiver`
 
 `$ brew cask install u-torrent`
