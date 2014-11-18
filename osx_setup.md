@@ -37,6 +37,8 @@ Essentials
 
 `$ brew install brew-cask`
 
+`$ brew install composer`
+
 `$ brew install git`
 
 `$ brew install mongodb`
