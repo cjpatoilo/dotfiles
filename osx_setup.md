@@ -47,6 +47,8 @@ Essentials
 
 `$ brew install node`
 
+`$ brew install php56`
+
 `$ brew install postgis`
 
 `$ brew install postgresql`
@@ -79,13 +81,15 @@ Utils
 
 `$ brew cask install spotify`
 
-`$ brew cask install the-unarchiver`
-
 `$ brew cask install u-torrent`
 
 `$ brew cask install vlc`
 
+`$ brew cask install unrarx`
+
 Development
+
+`$ brew cask install browserstacklocal`
 
 `$ brew cask install filezilla`
 
@@ -96,6 +100,8 @@ Development
 `$ brew cask install sublime-text-3`
 
 `$ brew cask install vangrant`
+
+`$ brew cask install virtualbox`
 
 Browsers
 
