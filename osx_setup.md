@@ -59,6 +59,10 @@ Essentials
 
 `$ brew install z`
 
+Or upgrade the dependencies versions
+
+`$ brew upgrade`
+
 Remove outdated versions from the cellar
 
 `$ brew cleanup`
@@ -126,6 +130,10 @@ Browsers
 Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 
 `$ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r`
+
+Or upgrade the dependencies versions
+
+`$ brew cask upgrade`
 
 Remove outdated versions from the cache
 
