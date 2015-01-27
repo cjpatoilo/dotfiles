@@ -447,7 +447,8 @@ Install Packages
  
 Preferences Settings
 
-`{
+```
+{
 	"auto_complete_delay": 10,
 	"auto_complete_with_fields": true,
 	"auto_indent": true,
@@ -474,7 +475,8 @@ Preferences Settings
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
-}`
+}
+```
 
 
 ### 9. Vangrant
