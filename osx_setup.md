@@ -424,13 +424,9 @@ Install Packages
 - BracketHighlighter
 - Codeivate
 - CSS Snippets
-- CSScomb
-- DocBlockr
+- CSS Comb
 - Emmet
-- Gist
-- Git
-- Gitignore
-- HTML - CSS - JS Prettify
+- HTML-CSS-JS Prettify
 - Idiomatic-CSS-Comments-Snippets
 - Jade
 - Less
@@ -439,13 +435,10 @@ Install Packages
 - Placeholders
 - PyV8
 - ReactJS
-- Sass
 - SFTP
 - SideBarEnhancements
-- Stylus
-- SublimeTextGitX
 - Tag
-- Theme - Flatland
+- Theme-Flatland
 - Whitespace
  
 Preferences Settings
