@@ -412,10 +412,16 @@ Then open and set this file `~/.gitconfig`
 The text editor you'll fall in love with
 
 Install Package Control
-`import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')`
+
+The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
+
+`import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)`
+
+Install Packages
 
 - AutoFileName
 - BracketHighlighter
+- Codeivate
 - CSS Snippets
 - CSScomb
 - DocBlockr
@@ -437,9 +443,38 @@ Install Package Control
 - SublimeTextGitX
 - Tag
 - Theme - Flatland
-- Theme - Soda
-- Theme - SodaSolarizedDark
 - Whitespace
+ 
+Preferences Settings
+
+`{
+	"auto_complete_delay": 10,
+	"auto_complete_with_fields": true,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"close_windows_when_empty": false,
+	"detect_indentation": false,
+	"expand_tabs_on_save": true,
+	"font_face": "Arial",
+	"font_options": "subpixel_antialias",
+	"font_size": 15,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages": [ "Vintage" ],
+	"indent_to_bracket": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"rulers": [ 80 ],
+	"save_on_focus_lost": true,
+	"scroll_speed": 1.5,
+	"tab_completion": false,
+	"tab_size": 2,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}`
 
 
 ### 9. Vangrant
@@ -449,7 +484,7 @@ development.
 
 
 
-### 10. iTunes
+### 10. Spotify
 
 
 
