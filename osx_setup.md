@@ -419,6 +419,7 @@ The simplest method of installation is through the Sublime Text console. The con
 
 Install Packages
 
+- AngularJS
 - AutoFileName
 - BracketHighlighter
 - Codeivate
@@ -429,17 +430,19 @@ Install Packages
 - Gist
 - Git
 - Gitignore
-- Handlebars
-- Highlight Whitespances
 - HTML - CSS - JS Prettify
 - Idiomatic-CSS-Comments-Snippets
 - Jade
+- Less
 - LoremIpsum
 - Package Control
 - Placeholders
 - PyV8
+- ReactJS
+- Sass
 - SFTP
 - SideBarEnhancements
+- Stylus
 - SublimeTextGitX
 - Tag
 - Theme - Flatland
