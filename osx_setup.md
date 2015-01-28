@@ -77,6 +77,8 @@ Utils
 
 `$ brew cask install caffeine`
 
+`$ brew cask install gitter`
+
 `$ brew cask install google-drive`
 
 `$ brew cask install pomodoro-one`
