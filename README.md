@@ -12,7 +12,7 @@ Sea case convenire interpretaris ne. An vel tota latine tractatos. Rebum debet t
 
 The MIT License (MIT)
 
-Copyright (c) 2014 [CJ Patoilo](http://cjpatoilo.com)
+Copyright (c) 2015 [CJ Patoilo](http://cjpatoilo.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
