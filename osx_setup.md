@@ -41,6 +41,8 @@ Essentials
 
 `$ brew install git`
 
+`$ brew install heroku-toolbelt`
+
 `$ brew install mongodb`
 
 `$ brew install mysql`
@@ -100,8 +102,6 @@ Development
 `$ brew cask install browserstacklocal`
 
 `$ brew cask install filezilla`
-
-`$ brew cask install heroku-toolbelt`
 
 `$ brew cask install mamp`
 
