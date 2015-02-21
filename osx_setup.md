@@ -43,6 +43,8 @@ Essentials
 
 `$ brew install heroku-toolbelt`
 
+`$ brew install iojs`
+
 `$ brew install mongodb`
 
 `$ brew install mysql`
