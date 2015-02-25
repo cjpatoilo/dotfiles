@@ -425,6 +425,7 @@ The simplest method of installation is through the Sublime Text console. The con
 
 Install Packages
 
+- .htaccess Snippets
 - AngularJS
 - AutoFileName
 - BracketHighlighter
