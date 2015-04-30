@@ -59,6 +59,8 @@ Essentials
 
 `$ brew install redis`
 
+`$ brew install watchman`
+
 `$ brew install wget`
 
 `$ brew install z`
