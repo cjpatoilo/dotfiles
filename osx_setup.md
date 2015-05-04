@@ -438,6 +438,7 @@ Install Packages
 - HTML-CSS-JS Prettify
 - Idiomatic-CSS-Comments-Snippets
 - Jade
+- JSCS Formater
 - Less
 - LoremIpsum
 - Package Control
