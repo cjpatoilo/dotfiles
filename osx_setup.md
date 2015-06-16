@@ -436,6 +436,7 @@ Install Packages
 - CSS Snippets
 - CSS Comb
 - Emmet
+- Gutter Color
 - HTML-CSS-JS Prettify
 - Idiomatic-CSS-Comments-Snippets
 - Jade
