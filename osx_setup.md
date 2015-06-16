@@ -432,6 +432,7 @@ Install Packages
 - AutoFileName
 - BracketHighlighter
 - Codeivate
+- Color Highlighter
 - CSS Snippets
 - CSS Comb
 - Emmet
