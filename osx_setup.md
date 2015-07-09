@@ -498,5 +498,32 @@ development.
 
 
 
+### 11. DevTools
+- Batarang
+- Awesonme Screenshot Screen Capture, Annotate
+- BrowserStack Local
+- Cache Killer
+- ColorZilla
+- CSS Reloader
+- DevTools Theme: Flatland
+- Discover DevTools Companion
+- Grunt Devtools
+- Imagem Downloader
+- JSONView
+- Localhost
+- ng-inspector for AngularJS
+- Octotree
+- Page Ruler
+- PageSpeed Insights
+- Postman - REST Client
+- Postman Launcher
+- React Developer Tools
+- Wappalyzer
+- Web Developer
+- WhatFont
+- YSlow
+
+
+
 
 
