@@ -49,6 +49,8 @@ Essentials
 
 `$ brew install mysql`
 
+`$ brew install nginx`
+
 `$ brew install node`
 
 `$ brew install php56`
