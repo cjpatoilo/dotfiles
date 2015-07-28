@@ -163,6 +163,8 @@ NodeJS
 
 `$ npm install -g gulp`
 
+`$ npm install -g karma`
+
 `$ npm install -g http-server`
 
 `$ npm install -g ionic`
@@ -170,6 +172,8 @@ NodeJS
 `$ npm install -g mongo-hacker`
 
 `$ npm install -g nodemon`
+
+`$ npm install -g protractor`
 
 Ruby
 
