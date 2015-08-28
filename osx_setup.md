@@ -526,6 +526,7 @@ development.
 - Postman - REST Client
 - Postman Launcher
 - React Developer Tools
+- Scrum for Trello
 - Wappalyzer
 - Web Developer
 - WhatFont
