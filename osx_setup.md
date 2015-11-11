@@ -119,6 +119,8 @@ Development
 
 `$ brew cask install virtualbox`
 
+`$ brew cask install visual-studio-code`
+
 Browsers
 
 `$ brew cask install firefox`
