@@ -113,6 +113,8 @@ Development
 
 `$ brew cask install mamp`
 
+`$ brew cask install parallels-desktop`
+
 `$ brew cask install sublime-text-3`
 
 `$ brew cask install vangrant`
@@ -132,8 +134,6 @@ Browsers
 `$ brew cask install google-chrome`
 
 `$ brew cask install google-chrome-canary`
-
-`$ brew cask install ie`
 
 `$ brew cask install maxthon`
 
