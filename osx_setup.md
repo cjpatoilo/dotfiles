@@ -35,9 +35,13 @@ Essentials
 
 `$ brew install ant`
 
+`$ brew install batik`
+
 `$ brew install brew-cask`
 
 `$ brew install composer`
+
+`$ brew install fontforge`
 
 `$ brew install git`
 
@@ -60,6 +64,10 @@ Essentials
 `$ brew install postgresql`
 
 `$ brew install redis`
+
+`$ brew install ttfautohint`
+
+`$ brew install ttf2eot`
 
 `$ brew install watchman`
 
