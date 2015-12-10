@@ -1,6 +1,6 @@
-[![cover](https://bitbucket.org/repo/B8zLjA/images/650141281-cover.png)](http://bitbucket.org/cjpatoilo/dotfiles)
+[![CJ Patoilo's  Dotfiles](media/cover.png)](https://github.com/cjpatoilo/dotfiles)
 
-> A restore point for sync your settings and preferences for your toolbox.
+| A restore point for sync your settings and preferences for your toolbox.
 
 ## License
 
