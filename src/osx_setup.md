@@ -87,6 +87,8 @@ Utils
 
 `$ brew cask install pomodoro-one`
 
+`$ brew cask install recordit`
+
 `$ brew cask install skype`
 
 `$ brew cask install slack`
