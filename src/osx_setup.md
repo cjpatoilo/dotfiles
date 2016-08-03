@@ -111,7 +111,7 @@ Development
 
 `$ brew cask install sublime-text-3`
 
-`$ brew cask install vangrant`
+`$ brew cask install vagrant`
 
 `$ brew cask install virtualbox`
 
@@ -484,16 +484,11 @@ Preferences Settings
 ```
 
 
-### 9. Vangrant
+### 9. Vagrant
 
-I'm using Vagrant (http://www.vagrantup.com/) to setup a few VMs locally for
+I'm using Vagrant (https://vagrantup.com) to setup a few VMs locally for
 development.
 
 
 
 ### 10. Spotify
-
-
-
-
-
