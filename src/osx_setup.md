@@ -435,6 +435,7 @@ Install Packages
 - CSS Snippets
 - CSS Comb
 - Emmet
+- ExpandTabsOnSave
 - HTML-CSS-JS Prettify
 - Idiomatic-CSS-Comments-Snippets
 - Jade
