@@ -34,21 +34,21 @@ Essentials
 `$ brew install`
 
 ```
-- android-sdk
-- ant
-- brew-cask
-- composer
-- git
-- heroku-toolbelt
-- iojs
-- mongodb
-- mysql
-- php56
-- postgis
-- postgresql
-- redis
-- wget
-- z
+android-sdk
+ant
+brew-cask
+composer
+git
+heroku-toolbelt
+iojs
+mongodb
+mysql
+php56
+postgis
+postgresql
+redis
+wget
+z
 ```
 
 Or upgrade the dependencies versions
@@ -68,32 +68,32 @@ Utils
 `$ brew cask install`
 
 ```
-- appcleaner
-- browserstacklocal
-- caffeine
-- docker
-- filezilla
-- firefox
-- firefox-aurora
-- firefox-nightly
-- gitter
-- google-chrome
-- google-chrome-canary
-- kap
-- mamp
-- opera
-- opera-next
-- pomodoro-one
-- rightzoom
-- skype
-- slack
-- sourcetree
-- spotify
-- sublime-text-3
-- telegram
-- unrarx
-- vlc
-- webtorrent
+appcleaner
+browserstacklocal
+caffeine
+docker
+filezilla
+firefox
+firefox-aurora
+firefox-nightly
+gitter
+google-chrome
+google-chrome-canary
+kap
+mamp
+opera
+opera-next
+pomodoro-one
+rightzoom
+skype
+slack
+sourcetree
+spotify
+sublime-text-3
+telegram
+unrarx
+vlc
+webtorrent
 ```
 
 Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
@@ -113,12 +113,12 @@ NodeJS
 `$ npm install`
 
 ```
-- bower
-- cordova
-- http-server
-- ionic
-- json-server
-- mongo-hacker
+bower
+cordova
+http-server
+ionic
+json-server
+mongo-hacker
 ```
 
 Ruby
@@ -140,92 +140,149 @@ TweetDeck (https://www.tweetdeck.com/download/mac/latest)
 Adobe Suite (https://www.adobe.com/downloads.html)
 
 
+### 5. Sublime Text 3
 
-### 5. System
+The text editor you'll fall in love with
 
-Finder: show all filenames extensions
+Install Package Control
 
-`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
+The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
 
-Finder: show hidden files by default
+`import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)`
 
-`defaults write com.apple.finder AppleShowAllFiles -bool true`
-
-Finder: show status bar
-
-`defaults write com.apple.finder ShowStatusBar -bool true`
-
-Finder: allow text selection in Quick Look
-
-`defaults write com.apple.finder QLEnableTextSelection -bool true`
-
-Disable the warning when changing a file extension
-
-`defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
-
-Use plain text mode for new TextEdit documents
-
-`defaults write com.apple.TextEdit RichText -int 0`
-
-Open and save files as UTF-8 in TextEdit
-
-`defaults write com.apple.TextEdit PlainTextEncoding -int 4`
-
-`defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
-
-Save screenshots to the desktop
-
-`defaults write com.apple.screencapture location -string "$HOME/Desktop"`
-
-Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-
-`defaults write com.apple.screencapture type -string "png"`
-
-Disable shadow in screenshots
-
-`defaults write com.apple.screencapture disable-shadow -bool true`
-
-Prevent Time Machine from prompting to use new hard drives as backup volume
-
-`defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
-
-Change indexing order and disable some file types
+Install Packages
 
 ```
-	defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}'
+[AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
+[BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
+[Emmet](https://packagecontrol.io/packages/Emmet/)
+[ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
+[HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
+[LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
+[Placeholders](https://packagecontrol.io/packages/Placeholders/)
+[SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements/)
+[Snippets](#)
+[Tag](https://packagecontrol.io/packages/Tag/)
+[Theme FlatLand](https://github.com/thinkpixellab/flatland/)
+[Whitespace](https://packagecontrol.io/packages/Whitespace/)
 ```
 
-Load new settings before rebuilding the index
+Preferences Settings
 
-`killall mds`
+```
+{
+	"auto_complete_delay": 10,
+	"auto_complete_with_fields": true,
+	"auto_indent": true,
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip"
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"convert_tabspaces_on_save": true,
+	"detect_indentation": false,
+	"expand_tabs_on_save": true,
+	"font_face": "Arial",
+	"font_options": "subpixel_antialias",
+	"font_size": 18,
+	"ha_style": "filled",
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"BracketHighlighter",
+		"DocBlockr",
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"index_exclude_patterns":
+	[
+		"wordpress",
+		"bower_components",
+		"node_modules",
+		"plugins",
+		"platforms",
+		"lib",
+		"layout",
+		"files",
+		"engine",
+		"dist",
+		"*.log",
+		".*-cache"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"scroll_speed": 2,
+	"tab_completion": false,
+	"tab_size": 2,
+	"theme": "Material Brogrammer.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+	"typescript_plugin_tsc_version": "1.7.3",
+	"word_wrap": false
+}
+```
 
-Make sure indexing is enabled for the main volume
-
-`sudo mdutil -i on /`
-
-Rebuild the index from scratch
-
-`sudo mdutil -E /`
 
 
+### 6. Git
 
-### 6. Bash `~/.bash_profile`
+Make it even easier version control
+
+`$ git config --global user.name "Your Full Name"`
+
+`$ git config --global user.email "Your Email Address"`
+
+Then open and set this file `~/.gitconfig`
+
+```
+[user]
+	name = Your_name
+	email = Your_e-mail
+
+[branch]
+	autosetupmerge = always
+
+[alias]
+	ci = commit -am
+	lo = log --pretty=format:'%an - %h %s %ar'
+	st = status
+	br = branch
+	co = checkout
+	sw = show
+	df = diff
+	fe = fetch
+	mg = merge
+	rb = rebase
+	rt = remote -v
+	po = push origin master
+	ph = push heroku master
+	pu = pull origin master
+```
+
+
+
+### 7. Bash `~/.bash_profile`
 Make a Terminal Better
 
 ```
@@ -325,156 +382,88 @@ ql () { qlmanage -p "$*" >& /dev/null; }
 
 # DT:  Pipe content to file on MacOS Desktop
 alias DT='tee ~/Desktop/terminalOut.txt'
-
 ```
 
 
 
-### 7. Git
+### 8. System
 
-Make it even easier version control
+Finder: show all filenames extensions
 
-`$ git config --global user.name "Your Full Name"`
+`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
-`$ git config --global user.email "Your Email Address"`
+Finder: show hidden files by default
 
-Then open and set this file `~/.gitconfig`
+`defaults write com.apple.finder AppleShowAllFiles -bool true`
 
-```
-[user]
-	name = Your_name
-	email = Your_e-mail
+Finder: show status bar
 
-[branch]
-	autosetupmerge = always
+`defaults write com.apple.finder ShowStatusBar -bool true`
 
-[alias]
-	ci = commit -am
-	lo = log --pretty=format:'%an - %h %s %ar'
-	st = status
-	br = branch
-	co = checkout
-	sw = show
-	df = diff
-	fe = fetch
-	mg = merge
-	rb = rebase
-	rt = remote -v
-	po = push origin master
-	ph = push heroku master
-	pu = pull origin master
-```
+Finder: allow text selection in Quick Look
 
+`defaults write com.apple.finder QLEnableTextSelection -bool true`
 
-### 8. Sublime Text 3
+Disable the warning when changing a file extension
 
-The text editor you'll fall in love with
+`defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
 
-Install Package Control
+Use plain text mode for new TextEdit documents
 
-The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
+`defaults write com.apple.TextEdit RichText -int 0`
 
-`import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)`
+Open and save files as UTF-8 in TextEdit
 
-Install Packages
+`defaults write com.apple.TextEdit PlainTextEncoding -int 4`
 
-```
-- [AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
-- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
-- [Emmet](https://packagecontrol.io/packages/Emmet/)
-- [ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
-- [HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
-- [LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
-- [Placeholders](https://packagecontrol.io/packages/Placeholders/)
-- [SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements/)
-- [Snippets](#)
-- [Tag](https://packagecontrol.io/packages/Tag/)
-- [Theme FlatLand](https://github.com/thinkpixellab/flatland/)
-- [Whitespace](https://packagecontrol.io/packages/Whitespace/)
-```
+`defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
 
-Preferences Settings
+Save screenshots to the desktop
+
+`defaults write com.apple.screencapture location -string "$HOME/Desktop"`
+
+Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+
+`defaults write com.apple.screencapture type -string "png"`
+
+Disable shadow in screenshots
+
+`defaults write com.apple.screencapture disable-shadow -bool true`
+
+Prevent Time Machine from prompting to use new hard drives as backup volume
+
+`defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
+
+Change indexing order and disable some file types
 
 ```
-{
-	"auto_complete_delay": 10,
-	"auto_complete_with_fields": true,
-	"auto_indent": true,
-	"binary_file_patterns":
-	[
-		"*.dds",
-		"*.eot",
-		"*.gif",
-		"*.ico",
-		"*.jar",
-		"*.jpeg",
-		"*.jpg",
-		"*.pdf",
-		"*.png",
-		"*.swf",
-		"*.tga",
-		"*.ttf",
-		"*.zip"
-	],
-	"bold_folder_labels": true,
-	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"convert_tabspaces_on_save": true,
-	"detect_indentation": false,
-	"expand_tabs_on_save": true,
-	"font_face": "Arial",
-	"font_options": "subpixel_antialias",
-	"font_size": 18,
-	"ha_style": "filled",
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"BracketHighlighter",
-		"DocBlockr",
-		"Vintage"
-	],
-	"indent_to_bracket": true,
-	"index_exclude_patterns":
-	[
-		"wordpress",
-		"bower_components",
-		"node_modules",
-		"plugins",
-		"platforms",
-		"lib",
-		"layout",
-		"files",
-		"engine",
-		"dist",
-		"*.log",
-		".*-cache"
-	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"rulers":
-	[
-		80
-	],
-	"save_on_focus_lost": true,
-	"scroll_speed": 2,
-	"tab_completion": false,
-	"tab_size": 2,
-	"theme": "Material Brogrammer.sublime-theme",
-	"translate_tabs_to_spaces": false,
-	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true,
-	"typescript_plugin_tsc_version": "1.7.3",
-	"word_wrap": false
-}
+	defaults write com.apple.spotlight orderedItems -array \
+	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+	'{"enabled" = 1;"name" = "PDF";}' \
+	'{"enabled" = 1;"name" = "FONTS";}' \
+	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+	'{"enabled" = 0;"name" = "MESSAGES";}' \
+	'{"enabled" = 0;"name" = "CONTACT";}' \
+	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
+	'{"enabled" = 0;"name" = "IMAGES";}' \
+	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+	'{"enabled" = 0;"name" = "MUSIC";}' \
+	'{"enabled" = 0;"name" = "MOVIES";}' \
+	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+	'{"enabled" = 0;"name" = "SOURCE";}'
 ```
 
+Load new settings before rebuilding the index
 
-### 9. Vagrant
+`killall mds`
 
-I'm using Vagrant (https://vagrantup.com) to setup a few VMs locally for
-development.
+Make sure indexing is enabled for the main volume
 
+`sudo mdutil -i on /`
 
+Rebuild the index from scratch
 
-### 10. Spotify
+`sudo mdutil -E /`
