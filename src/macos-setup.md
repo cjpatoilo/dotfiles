@@ -1,25 +1,38 @@
-MacOS Setup
-=========================================
+# MacOS Setup
 
-This gist is just a personal reference, use with care.
+> A restore point for sync your settings and preferences for your toolbox.
 
-
-
-### 1. Run software update
-
-Make sure everything is up to date.
+NOTE: This tips is just a personal reference, use with care.
 
 
-
-### 2. Install Xcode and/or "Command Line Tools"
-
-"Command Line Tools" can be downloaded separate from Xcode at
-(https://developer.apple.com/downloads/). It is way smaller than installing the
-whole Xcode but might not work for all cases too. (https://developer.apple.com/xcode/). Xcode can be found on AppStore too.
+## Table of Contents
 
 
+- [Install Manually](#install-manually)
+- [Terminal](#Terminal)
+- [Sublime Text 3](#sublime-text-3)
+- [Git](#git)
+- [Bash](#bash)
+- [System](#system)
 
-### 3. Install from Terminal
+
+## Usage
+
+
+### Install Manually
+
+This is the hardest part.
+
+[Command Line Tools](https://developer.apple.com/downloads/)
+
+[Xcode](https://developer.apple.com/xcode/)
+
+TweetDeck (https://www.tweetdeck.com/download/mac/latest)
+
+Adobe Suite (https://www.adobe.com/downloads.html)
+
+
+### Terminal
 
 Homebrew - The package manager for OS X. (http://brew.sh/)
 
@@ -130,17 +143,7 @@ rails
 ```
 
 
-
-### 4. Install Manually
-
-This is the hardest part.
-
-TweetDeck (https://www.tweetdeck.com/download/mac/latest)
-
-Adobe Suite (https://www.adobe.com/downloads.html)
-
-
-### 5. Sublime Text 3
+### Sublime Text 3
 
 The text editor you'll fall in love with
 
@@ -245,7 +248,7 @@ Preferences Settings
 
 
 
-### 6. Git
+### Git
 
 Make it even easier version control
 
@@ -386,7 +389,7 @@ alias DT='tee ~/Desktop/terminalOut.txt'
 
 
 
-### 8. System
+### System
 
 Finder: show all filenames extensions
 
