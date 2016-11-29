@@ -1,4 +1,4 @@
-Mac OS X Setup
+MacOS Setup
 =========================================
 
 This gist is just a personal reference, use with care.
@@ -31,37 +31,25 @@ Make sure we’re using the latest Homebrew
 
 Essentials
 
-`$ brew install android-sdk`
+`$ brew install`
 
-`$ brew install ant`
-
-`$ brew install brew-cask`
-
-`$ brew install composer`
-
-`$ brew install git`
-
-`$ brew install heroku-toolbelt`
-
-`$ brew install iojs`
-
-`$ brew install mongodb`
-
-`$ brew install mysql`
-
-`$ brew install node`
-
-`$ brew install php56`
-
-`$ brew install postgis`
-
-`$ brew install postgresql`
-
-`$ brew install redis`
-
-`$ brew install wget`
-
-`$ brew install z`
+```
+- android-sdk
+- ant
+- brew-cask
+- composer
+- git
+- heroku-toolbelt
+- iojs
+- mongodb
+- mysql
+- php56
+- postgis
+- postgresql
+- redis
+- wget
+- z
+```
 
 Or upgrade the dependencies versions
 
@@ -77,63 +65,36 @@ Make sure we’re using the latest Brew Cask
 
 Utils
 
-`$ brew cask install appcleaner`
+`$ brew cask install`
 
-`$ brew cask install caffeine`
-
-`$ brew cask install gitter`
-
-`$ brew cask install google-drive`
-
-`$ brew cask install pomodoro-one`
-
-`$ brew cask install recordit`
-
-`$ brew cask install skype`
-
-`$ brew cask install slack`
-
-`$ brew cask install spotify`
-
-`$ brew cask install u-torrent`
-
-`$ brew cask install vlc`
-
-`$ brew cask install unrarx`
-
-Development
-
-`$ brew cask install browserstacklocal`
-
-`$ brew cask install filezilla`
-
-`$ brew cask install mamp`
-
-`$ brew cask install sublime-text-3`
-
-`$ brew cask install vagrant`
-
-`$ brew cask install virtualbox`
-
-Browsers
-
-`$ brew cask install firefox`
-
-`$ brew cask install firefox-aurora`
-
-`$ brew cask install firefox-nightly`
-
-`$ brew cask install google-chrome`
-
-`$ brew cask install google-chrome-canary`
-
-`$ brew cask install ie`
-
-`$ brew cask install maxthon`
-
-`$ brew cask install opera`
-
-`$ brew cask install opera-next`
+```
+- appcleaner
+- browserstacklocal
+- caffeine
+- docker
+- filezilla
+- firefox
+- firefox-aurora
+- firefox-nightly
+- gitter
+- google-chrome
+- google-chrome-canary
+- kap
+- mamp
+- opera
+- opera-next
+- pomodoro-one
+- rightzoom
+- skype
+- slack
+- sourcetree
+- spotify
+- sublime-text-3
+- telegram
+- unrarx
+- vlc
+- webtorrent
+```
 
 Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 
@@ -149,29 +110,24 @@ Remove outdated versions from the cache
 
 NodeJS
 
-`$ npm install -g bower`
+`$ npm install`
 
-`$ npm install -g browserify`
-
-`$ npm install -g cordova`
-
-`$ npm install -g express`
-
-`$ npm install -g grunt-cli`
-
-`$ npm install -g gulp`
-
-`$ npm install -g http-server`
-
-`$ npm install -g ionic`
-
-`$ npm install -g mongo-hacker`
-
-`$ npm install -g nodemon`
+```
+- bower
+- cordova
+- http-server
+- ionic
+- json-server
+- mongo-hacker
+```
 
 Ruby
 
-`$ gem install rails`
+`$ gem install`
+
+```
+rails
+```
 
 
 
@@ -236,23 +192,23 @@ Prevent Time Machine from prompting to use new hard drives as backup volume
 Change indexing order and disable some file types
 
 ```
-  defaults write com.apple.spotlight orderedItems -array \
-  '{"enabled" = 1;"name" = "APPLICATIONS";}' \
-  '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-  '{"enabled" = 1;"name" = "DIRECTORIES";}' \
-  '{"enabled" = 1;"name" = "PDF";}' \
-  '{"enabled" = 1;"name" = "FONTS";}' \
-  '{"enabled" = 0;"name" = "DOCUMENTS";}' \
-  '{"enabled" = 0;"name" = "MESSAGES";}' \
-  '{"enabled" = 0;"name" = "CONTACT";}' \
-  '{"enabled" = 0;"name" = "EVENT_TODO";}' \
-  '{"enabled" = 0;"name" = "IMAGES";}' \
-  '{"enabled" = 0;"name" = "BOOKMARKS";}' \
-  '{"enabled" = 0;"name" = "MUSIC";}' \
-  '{"enabled" = 0;"name" = "MOVIES";}' \
-  '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-  '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-  '{"enabled" = 0;"name" = "SOURCE";}'
+	defaults write com.apple.spotlight orderedItems -array \
+	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+	'{"enabled" = 1;"name" = "PDF";}' \
+	'{"enabled" = 1;"name" = "FONTS";}' \
+	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+	'{"enabled" = 0;"name" = "MESSAGES";}' \
+	'{"enabled" = 0;"name" = "CONTACT";}' \
+	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
+	'{"enabled" = 0;"name" = "IMAGES";}' \
+	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+	'{"enabled" = 0;"name" = "MUSIC";}' \
+	'{"enabled" = 0;"name" = "MOVIES";}' \
+	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+	'{"enabled" = 0;"name" = "SOURCE";}'
 ```
 
 Load new settings before rebuilding the index
@@ -269,17 +225,12 @@ Rebuild the index from scratch
 
 
 
-
-
-
-
 ### 6. Bash `~/.bash_profile`
 Make a Terminal Better
 
 ```
 # Adding local bin for all Homebrew stuff
 export PATH="/usr/local/bin:$PATH"
-
 
 # Custom prompt
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
@@ -379,7 +330,7 @@ alias DT='tee ~/Desktop/terminalOut.txt'
 
 
 
-### 7. Git 
+### 7. Git
 
 Make it even easier version control
 
@@ -427,30 +378,21 @@ The simplest method of installation is through the Sublime Text console. The con
 
 Install Packages
 
-- .htaccess Snippets
-- AngularJS
-- AutoFileName
-- BracketHighlighter
-- Codeivate
-- CSS Snippets
-- CSS Comb
-- Emmet
-- ExpandTabsOnSave
-- HTML-CSS-JS Prettify
-- Idiomatic-CSS-Comments-Snippets
-- Jade
-- Less
-- LoremIpsum
-- Package Control
-- Placeholders
-- PyV8
-- ReactJS
-- SFTP
-- SideBarEnhancements
-- Tag
-- Theme-Flatland
-- Whitespace
- 
+```
+- [AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
+- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
+- [Emmet](https://packagecontrol.io/packages/Emmet/)
+- [ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
+- [HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
+- [LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
+- [Placeholders](https://packagecontrol.io/packages/Placeholders/)
+- [SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements/)
+- [Snippets](#)
+- [Tag](https://packagecontrol.io/packages/Tag/)
+- [Theme FlatLand](https://github.com/thinkpixellab/flatland/)
+- [Whitespace](https://packagecontrol.io/packages/Whitespace/)
+```
+
 Preferences Settings
 
 ```
@@ -458,28 +400,71 @@ Preferences Settings
 	"auto_complete_delay": 10,
 	"auto_complete_with_fields": true,
 	"auto_indent": true,
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip"
+	],
 	"bold_folder_labels": true,
 	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"convert_tabspaces_on_save": true,
 	"detect_indentation": false,
 	"expand_tabs_on_save": true,
 	"font_face": "Arial",
 	"font_options": "subpixel_antialias",
-	"font_size": 15,
+	"font_size": 18,
+	"ha_style": "filled",
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"ignored_packages": [ "Vintage" ],
+	"ignored_packages":
+	[
+		"BracketHighlighter",
+		"DocBlockr",
+		"Vintage"
+	],
 	"indent_to_bracket": true,
+	"index_exclude_patterns":
+	[
+		"wordpress",
+		"bower_components",
+		"node_modules",
+		"plugins",
+		"platforms",
+		"lib",
+		"layout",
+		"files",
+		"engine",
+		"dist",
+		"*.log",
+		".*-cache"
+	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"rulers": [ 80 ],
+	"rulers":
+	[
+		80
+	],
 	"save_on_focus_lost": true,
-	"scroll_speed": 1.5,
+	"scroll_speed": 2,
 	"tab_completion": false,
 	"tab_size": 2,
-	"theme": "Flatland Dark.sublime-theme",
+	"theme": "Material Brogrammer.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
+	"typescript_plugin_tsc_version": "1.7.3",
 	"word_wrap": false
 }
 ```
