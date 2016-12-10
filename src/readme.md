@@ -30,7 +30,7 @@ This is the hardest part.
 
 #### Terminal
 
-Homebrew - The package manager for OS X. (http://brew.sh/)
+[Homebrew](http://brew.sh/) - The package manager for OS X.
 
 `$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
