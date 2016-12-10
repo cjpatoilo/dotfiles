@@ -50,8 +50,8 @@ Essentials
 android-sdk
 ant
 brew-cask
-composer
 git
+gpg
 heroku-toolbelt
 iojs
 mongodb
