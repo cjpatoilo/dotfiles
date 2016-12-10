@@ -42,24 +42,22 @@ Essentials
 
 `$ brew install`
 
-```
-android-sdk
-ant
-brew-cask
-composer
-git
-gpg
-heroku-toolbelt
-iojs
-mongodb
-mysql
-php56
-postgis
-postgresql
-redis
-wget
-z
-```
+- android-sdk
+- ant
+- brew-cask
+- composer
+- git
+- gpg
+- heroku-toolbelt
+- iojs
+- mongodb
+- mysql
+- php56
+- postgis
+- postgresql
+- redis
+- wget
+- z
 
 Or upgrade the dependencies versions
 
@@ -77,34 +75,32 @@ Utils
 
 `$ brew cask install`
 
-```
-appcleaner
-browserstacklocal
-caffeine
-docker
-filezilla
-firefox
-firefox-aurora
-firefox-nightly
-gitter
-google-chrome
-google-chrome-canary
-kap
-mamp
-opera
-opera-next
-pomodoro-one
-rightzoom
-skype
-slack
-sourcetree
-spotify
-sublime-text-3
-telegram
-unrarx
-vlc
-webtorrent
-```
+- appcleaner
+- browserstacklocal
+- caffeine
+- docker
+- filezilla
+- firefox
+- firefox-aurora
+- firefox-nightly
+- gitter
+- google-chrome
+- google-chrome-canary
+- kap
+- mamp
+- opera
+- opera-next
+- pomodoro-one
+- rightzoom
+- skype
+- slack
+- sourcetree
+- spotify
+- sublime-text-3
+- telegram
+- unrarx
+- vlc
+- webtorrent
 
 Quick look plugins (https://github.com/sindresorhus/quick-look-plugins)
 
@@ -122,21 +118,17 @@ NodeJS
 
 `$ npm install`
 
-```
-cordova
-http-server
-ionic
-json-server
-mongo-hacker
-```
+- cordova
+- http-server
+- ionic
+- json-server
+- mongo-hacker
 
 Ruby
 
 `$ gem install`
 
-```
-rails
-```
+- rails
 
 
 ### Sublime Text 3
@@ -147,28 +139,26 @@ Install Package Control
 
 The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
 
-`import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)`
+```sh
+import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
 
 Install Packages
 
-```
-[AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
-[BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
-[Emmet](https://packagecontrol.io/packages/Emmet/)
-[ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
-[HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
-[LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
-[Placeholders](https://packagecontrol.io/packages/Placeholders/)
-[SideBarEnhancements](https://packagecontrol.io/packages/SideBarEnhancements/)
-[Snippets](#)
-[Tag](https://packagecontrol.io/packages/Tag/)
-[Theme FlatLand](https://github.com/thinkpixellab/flatland/)
-[Whitespace](https://packagecontrol.io/packages/Whitespace/)
-```
+- [AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
+- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
+- [Snippets](#)
+- [Emmet](https://packagecontrol.io/packages/Emmet/)
+- [ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
+- [HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
+- [LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
+- [Placeholders](https://packagecontrol.io/packages/Placeholders/)
+- [Tag](https://packagecontrol.io/packages/Tag/)
+- [Whitespace](https://packagecontrol.io/packages/Whitespace/)
 
 Preferences Settings
 
-```
+```json
 {
 	"auto_complete_delay": 10,
 	"auto_complete_with_fields": true,
@@ -244,9 +234,9 @@ Preferences Settings
 
 #### Git
 
-Make it even easier version control
+Make it even easier version control `~/.gitconfig`
 
-```
+```sh
 $ git config --global user.name "Your Full Name"
 $ git config --global user.email "Your Email Address"
 $ git config --global user.signingkey "Your Sign In Key"
@@ -271,107 +261,84 @@ $ git config --global commit.template "~/.stCommitMsg"
 $ git config --global gpg.program "gpg2"
 ```
 
-#### Bash 
+#### Bash
 
 Make a Terminal Better `~/.bash_profile`
 
 ```
-# Adding local bin for all Homebrew stuff
+# Show current Git branch name in bash PS1
+source "$HOME/.gitprompt"
+PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $\[\033[0m\] "
+
+# Show hidden files
+alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
+
+# Reload
+alias reload="source ~/.bash_profile"
+
+# Clear bash
+alias cls="clear"
+
+# Open Finder
+alias open="open ."
+
+# Open Sublime
+alias subl="sublime /"
+
+# Open www path
+alias www="cd $HOME/Www/"
+
+# Open desktop path
+alias desktop="cd $HOME/Desktop/"
+
+# Open Development
+alias cask="brew cask"
+
+# Command to HTTP Server
+alias pythonServer="open "http://localhost:8000"; python -m SimpleHTTPServer 8000; open ."
+
+# Command to PHP Server
+alias phpServer="open "http://localhost:5000"; php -S localhost:5000; open ."
+
+# Add NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Add local bin for all Homebrew stuff
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
-# Custom prompt
-source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
-PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $\[\033[0m\]"
+# Add Mongo
+export PATH=$PATH:/usr/local/mongodb/bin
 
-# Show or Hide hidden files in Finder
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder /System/Library/CoreServices/Finder.app'
+# Add Meteor
+export PATH="$PATH:$HOME/.meteor"
 
-# Starting HTTP Server
-alias server='open "http://localhost:8000"; python -m SimpleHTTPServer 8000; open .'
+# Add Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
 
-# Make Terminal Better
-alias www='cd ~/Www/'
+# Add JAVA
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
-# Reload Settings
-alias reload='source ~/.bash_profile'
+# Add Java ANT
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 
-# Preferred 'cp' implementation
-alias cp='cp -iv'
+# Add Android SDK
+export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
 
-# Preferred 'mv' implementation
-alias mv='mv -iv'
+# Add BlackBerry SDK
+export PATH="$PATH:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/"
 
-# Preferred 'mkdir' implementation
-alias mkdir='mkdir -pv'
+# Add Yarn
+export PATH="$PATH:$HOME/.yarn/bin"
 
-# Preferred 'ls' implementation
-alias ll='ls -FGlAhp'
+# Add RVM
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# Preferred 'less' implementation
-alias less='less -FSRXc'
-
-# Always list directory contents upon 'cd'
-cd() { builtin cd "$@"; ll; }
-
-# Go back 1 directory level (for fast typers)
-alias cd..='cd ../'
-
-# Go back 1 directory level
-alias ..='cd ../'
-
-# Go back 2 directory levels
-alias ...='cd ../../'
-
-# Go back 3 directory levels
-alias .3='cd ../../../'
-
-# Go back 4 directory levels
-alias .4='cd ../../../../'
-
-# Go back 5 directory levels
-alias .5='cd ../../../../../'
-
-# Go back 6 directory levels
-alias .6='cd ../../../../../../'
-
-# ~: Go Home
-alias ~="cd ~"
-
-# edit: Opens any file in sublime editor
-alias edit='subl'
-
-# f:  Opens current directory in MacOS Finder
-alias f='open -a Finder ./'
-alias open='open .'
-
-# c: Clear terminal display
-alias cls='clear'
-alias c='clear'
-
-# path:  Echo all executable Paths
-alias path='echo -e ${PATH//:/\\n}'
-
-# Show_options: display bash options settings
-alias show_options='shopt'
-
-# fix_stty:   Restore terminal settings when screwed up
-alias fix_stty='stty sane'
-
-# cic: Make tab-completion case-insensitive
-alias cic='set completion-ignore-case On'
-
-# mcd: Makes new Dir and jumps inside
-mcd () { mkdir -p "$1" && cd "$1"; }
-
-# trash: Moves a file to the MacOS trash
-trash () { command mv "$@" ~/.Trash ; }
-
-# ql:  Opens any file in MacOS Quicklook Preview
-ql () { qlmanage -p "$*" >& /dev/null; }
-
-# DT:  Pipe content to file on MacOS Desktop
-alias DT='tee ~/Desktop/terminalOut.txt'
+# Add GPG
+export GPG_TTY=$(tty)
 ```
 
 
