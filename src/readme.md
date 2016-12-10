@@ -2,14 +2,13 @@
 
 > A restore point for sync your settings and preferences for your toolbox.
 
-NOTE: This tips is just a personal reference, use with care.
+***NOTE: This tips is just a personal reference, use with care.***
 
 
 ## Table of Contents
 
-
 - [Install Manually](#install-manually)
-- [Terminal](#Terminal)
+- [Terminal](#terminal)
 - [Sublime Text 3](#sublime-text-3)
 - [Git](#git)
 - [Bash](#bash)
@@ -19,20 +18,17 @@ NOTE: This tips is just a personal reference, use with care.
 ## Usage
 
 
-### Install Manually
+#### Install Manually
 
 This is the hardest part.
 
-[Command Line Tools](https://developer.apple.com/downloads/)
-
-[Xcode](https://developer.apple.com/xcode/)
-
-TweetDeck (https://www.tweetdeck.com/download/mac/latest)
-
-Adobe Suite (https://www.adobe.com/downloads.html)
+- [Command Line Tools](https://developer.apple.com/downloads/)
+- [Xcode](https://developer.apple.com/xcode/)
+- [TweetDeck](https://www.tweetdeck.com/download/mac/latest)
+- [Adobe Suite](https://www.adobe.com/downloads.html)
 
 
-### Terminal
+#### Terminal
 
 Homebrew - The package manager for OS X. (http://brew.sh/)
 
@@ -50,6 +46,7 @@ Essentials
 android-sdk
 ant
 brew-cask
+composer
 git
 gpg
 heroku-toolbelt
@@ -126,7 +123,6 @@ NodeJS
 `$ npm install`
 
 ```
-bower
 cordova
 http-server
 ionic
@@ -246,47 +242,38 @@ Preferences Settings
 }
 ```
 
-
-
-### Git
+#### Git
 
 Make it even easier version control
 
-`$ git config --global user.name "Your Full Name"`
-
-`$ git config --global user.email "Your Email Address"`
-
-Then open and set this file `~/.gitconfig`
-
 ```
-[user]
-	name = Your_name
-	email = Your_e-mail
-
-[branch]
-	autosetupmerge = always
-
-[alias]
-	ci = commit -am
-	lo = log --pretty=format:'%an - %h %s %ar'
-	st = status
-	br = branch
-	co = checkout
-	sw = show
-	df = diff
-	fe = fetch
-	mg = merge
-	rb = rebase
-	rt = remote -v
-	po = push origin master
-	ph = push heroku master
-	pu = pull origin master
+$ git config --global user.name "Your Full Name"
+$ git config --global user.email "Your Email Address"
+$ git config --global user.signingkey "Your Sign In Key"
+$ git config --global branch.autosetupmerge "always"
+$ git config --global alias.ci "commit -am"
+$ git config --global alias.lo "log --pretty=format:'%an - %h %s %ar'"
+$ git config --global alias.st "status"
+$ git config --global alias.br "branch"
+$ git config --global alias.co "checkout"
+$ git config --global alias.sw "show"
+$ git config --global alias.df "diff"
+$ git config --global alias.fe "fetch"
+$ git config --global alias.mg "merge"
+$ git config --global alias.rb "rebase"
+$ git config --global alias.rt "remote -v"
+$ git config --global alias.po "push origin master"
+$ git config --global alias.ph "push heroku master"
+$ git config --global alias.pu "pull origin master"
+$ git config --global core.excludesfile "~/.gitignore_global"
+$ git config --global commit.gpgsign "true"
+$ git config --global commit.template "~/.stCommitMsg"
+$ git config --global gpg.program "gpg2"
 ```
 
+#### Bash 
 
-
-### 7. Bash `~/.bash_profile`
-Make a Terminal Better
+Make a Terminal Better `~/.bash_profile`
 
 ```
 # Adding local bin for all Homebrew stuff
@@ -389,7 +376,7 @@ alias DT='tee ~/Desktop/terminalOut.txt'
 
 
 
-### System
+#### System
 
 Finder: show all filenames extensions
 
