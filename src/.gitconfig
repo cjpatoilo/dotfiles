@@ -1,0 +1,42 @@
+[user]
+	name = CJ Patoilo
+	email = cjpatoilo@gmail.com
+	signingkey = YOUR_KEY_HERE
+
+[branch]
+	autosetupmerge = always
+
+[alias]
+	ci = commit -am
+	lo = log --pretty=format:'%an - %h %s %ar'
+	st = status
+	br = branch
+	co = checkout
+	sw = show
+	df = diff
+	fe = fetch
+	mg = merge
+	rb = rebase
+	rt = remote -v
+	po = push origin master
+	ph = push heroku master
+	pu = pull origin master
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[commit]
+	gpgsign = true
+	template = ~/.stCommitMsg
+
+[gpg]
+	program = gpg2
+
+[difftool "sourcetree"]
+	cmd = ~/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
