@@ -2,8 +2,6 @@
 
 > A restore point for sync your settings and preferences for your toolbox.
 
-***NOTE: This tips is just a personal reference, use with care.***
-
 
 ## Table of Contents
 
@@ -17,18 +15,21 @@
 
 ## Usage
 
+Start reading this document to see it is not difficult as you might have imagined. Just follow the step by step.
 
-#### Install Manually
+***NOTE: This tips is just a personal reference, use with care.***
+
+
+### Install Manually
 
 This is the hardest part.
 
 - [Command Line Tools](https://developer.apple.com/downloads/)
 - [Xcode](https://developer.apple.com/xcode/)
 - [TweetDeck](https://www.tweetdeck.com/download/mac/latest)
-- [Adobe Suite](https://www.adobe.com/downloads.html)
 
 
-#### Terminal
+### Terminal
 
 [Homebrew](http://brew.sh/) - The package manager for OS X.
 
@@ -75,6 +76,8 @@ Utils
 
 `$ brew cask install`
 
+- adobe-illustrator-cc
+- adobe-photoshop-cc
 - appcleaner
 - browserstacklocal
 - caffeine
@@ -92,6 +95,7 @@ Utils
 - opera-next
 - pomodoro-one
 - rightzoom
+- sketch
 - skype
 - slack
 - sourcetree
@@ -232,36 +236,61 @@ Preferences Settings
 }
 ```
 
-#### Git
+### Git
 
 Make it even easier version control `~/.gitconfig`
 
 ```sh
-$ git config --global user.name "Your Full Name"
-$ git config --global user.email "Your Email Address"
-$ git config --global user.signingkey "Your Sign In Key"
-$ git config --global branch.autosetupmerge "always"
-$ git config --global alias.ci "commit -am"
-$ git config --global alias.lo "log --pretty=format:'%an - %h %s %ar'"
-$ git config --global alias.st "status"
-$ git config --global alias.br "branch"
-$ git config --global alias.co "checkout"
-$ git config --global alias.sw "show"
-$ git config --global alias.df "diff"
-$ git config --global alias.fe "fetch"
-$ git config --global alias.mg "merge"
-$ git config --global alias.rb "rebase"
-$ git config --global alias.rt "remote -v"
-$ git config --global alias.po "push origin master"
-$ git config --global alias.ph "push heroku master"
-$ git config --global alias.pu "pull origin master"
-$ git config --global core.excludesfile "~/.gitignore_global"
-$ git config --global commit.gpgsign "true"
-$ git config --global commit.template "~/.stCommitMsg"
-$ git config --global gpg.program "gpg2"
+[user]
+	name = "Your Full Name"
+	email = "Your Email Address"
+	signingkey = "Your Sign In Key"
+
+[branch]
+	autosetupmerge = always
+
+[alias]
+	ci = commit -am
+	lo = log --pretty=format:'%an - %h %s %ar'
+	st = status
+	br = branch
+	co = checkout
+	sw = show
+	df = diff
+	fe = fetch
+	mg = merge
+	rb = rebase
+	rt = remote -v
+	po = push origin master
+	pu = pull origin master
+	pg = push origin gh-pages
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[commit]
+	gpgsign = true
+	template = ~/.stCommitMsg
+
+[gpg]
+	program = gpg2
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
+	path =
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[mergetool "sourcetree"]
+	cmd = /Users/cjpatoilo/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 ```
 
-#### Bash
+### Bash
 
 Make a Terminal Better `~/.bash_profile`
 
@@ -343,7 +372,7 @@ export GPG_TTY=$(tty)
 
 
 
-#### System
+### System
 
 Finder: show all filenames extensions
 

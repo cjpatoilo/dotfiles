@@ -7,6 +7,21 @@
 
 Dotfiles provides a fast setup for backup, restore, and sync the prefs and settings for your toolbox. Dotfiles might be the most important files on your machine and I hope it helps you as much as it helps me!
 
+
+## Table of Contents
+
+- [Install Manually](src/readme.md#install-manually)
+- [Terminal](src/readme.md#terminal)
+- [Sublime Text 3](src/readme.md#sublime-text-3)
+- [Git](src/readme.md#git)
+- [Bash](src/readme.md#bash)
+- [System](src/readme.md#system)
+
+
+## Usage
+
+Start reading this document to see it is not difficult as you might have imagined. [Just follow the step by step](src/readme.md).
+
 ***NOTE: This tips is just a personal reference, use with care.***
 
 
