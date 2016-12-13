@@ -1,6 +1,6 @@
-<a align="center" href="http://cjpatoilo.com/dotfiles"><img width="100%" src="http://cjpatoilo.com/dotfiles/images/thumbnail.png" alt="Dotfiles - A restore point for sync your settings and preferences for your toolbox."></a>
+<a align="center" href="http://cjpatoilo.com/dotfiles"><img width="100%" src="http://cjpatoilo.com/dotfiles/images/thumbnail.png" alt="Dotfiles - A restore point for sync your settings and preferences in your toolbox."></a>
 
-| A restore point for sync your settings and preferences for your toolbox.
+| A restore point for sync your settings and preferences in your toolbox.
 
 
 ## Why it's awesome?

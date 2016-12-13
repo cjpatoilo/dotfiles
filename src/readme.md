@@ -1,6 +1,6 @@
 # MacOS Setup
 
-> A restore point for sync your settings and preferences for your toolbox.
+> A restore point for sync your settings and preferences in your toolbox.
 
 
 ## Table of Contents
