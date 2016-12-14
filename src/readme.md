@@ -50,7 +50,6 @@ Essentials
 - git
 - gpg
 - heroku-toolbelt
-- iojs
 - mongodb
 - mysql
 - php56
@@ -120,7 +119,7 @@ Remove outdated versions from the cache
 
 NodeJS
 
-`$ npm install`
+`$ npm install -g`
 
 - cordova
 - http-server
