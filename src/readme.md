@@ -52,10 +52,12 @@ Essentials
 - heroku-toolbelt
 - mongodb
 - mysql
+- nvm
 - php56
 - postgis
 - postgresql
 - redis
+- rvm
 - wget
 - z
 
