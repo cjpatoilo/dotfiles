@@ -255,16 +255,24 @@ Make it even easier version control `~/.gitconfig`
 	lo = log --pretty=format:'%an - %h %s %ar'
 	st = status
 	br = branch
-	co = checkout
 	sw = show
 	df = diff
 	fe = fetch
 	mg = merge
 	rb = rebase
 	rt = remote -v
-	po = push origin master
-	pu = pull origin master
-	pg = push origin gh-pages
+	co = checkout
+	po = push origin
+	pu = pull origin
+	pom = push origin master
+	pum = pull origin master
+	com = checkout master
+	pod = push origin develop
+	pud = pull origin develop
+	cod = checkout develop
+	pog = push origin gh-pages
+	pug = pull origin gh-pages
+	cog = checkout gh-pages
 
 [core]
 	excludesfile = ~/.gitignore_global
