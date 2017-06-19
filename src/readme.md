@@ -7,6 +7,7 @@
 
 - [Install Manually](#install-manually)
 - [Terminal](#terminal)
+- [Browser Extensions](#browser-extensions)
 - [Sublime Text 3](#sublime-text-3)
 - [Git](#git)
 - [Bash](#bash)
@@ -134,6 +135,32 @@ Ruby
 `$ gem install`
 
 - rails
+
+
+### Browser Extensions
+
+- [Appear.in Screen Sharing 1.0.1](https://chrome.google.com/webstore/detail/bodncoafpihbhpfljcaofnebjkaiaiga)
+- [Augury](https://chrome.google.com/webstore/detail/elgalmkoelokbchhkhacckoklkejnhcd)
+- [Backbone Debugger](https://chrome.google.com/webstore/detail/bhljhndlimiafopmmhjlgfpnnchjjbhd)
+- [Cache Killer](https://chrome.google.com/webstore/detail/jpfbieopdmepaolggioebjmedmclkbap)
+- [ColorZilla](https://chrome.google.com/webstore/detail/bhlhnicpbhignbdhedgjhgdocnmhomnp)
+- [Full Page Screen Capture](https://chrome.google.com/webstore/detail/fdpohaocaechififmbbbbbknoalclacl)
+- [Google Cast](https://chrome.google.com/webstore/detail/boadgeojelhgndaghljhdicfkmllpafd)
+- [Image Downloader](https://chrome.google.com/webstore/detail/cnpniohnfphhjihaiiggeabnkjhpaldj)
+- [JSON Formatter](https://chrome.google.com/webstore/detail/bcjindcccaagfpapjjmafapmmgkkhgoa)
+- [JustMyTrello](https://chrome.google.com/webstore/detail/nnljokkhckpgfhfkhhkmiecmdgcafkba)
+- [Lighthouse](https://chrome.google.com/webstore/detail/blipmdconlkpinefehnmjammfjpmpbjk)
+- [Pesticide](https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh)
+- [Postman](https://chrome.google.com/webstore/detail/fdmmgilgnpjigdojojpjoooidkmcomcm)
+- [Postman Launcher](https://chrome.google.com/webstore/detail/igofndmniooofoabmmpfonmdnhgchoka)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/fmkadmapgofadopljbjfkapdkoienihi)
+- [Reader View](https://chrome.google.com/webstore/detail/iibolhpkjjmoepndefdmdlmbpfhlgjpl)
+- [Redux DevTools](https://chrome.google.com/webstore/detail/lmhkpmbekcpmknklioeibfkpmmfibljd)
+- [Socket.io tester](https://chrome.google.com/webstore/detail/cgmimdpepcncnjgclhnhghdooepibakm)
+- [The Great Suspender](https://chrome.google.com/webstore/detail/klbibkeccnjlkjkiokjodocebajanakg)
+- [Vue.js devtools](https://chrome.google.com/webstore/detail/nhdogjmejiglipccpnnnanhbledajbpd)
+- [Wappalyzer](https://chrome.google.com/webstore/detail/gppongmhjkpfnbhagpmjfkannfbllamg)
+- [WhatFont](https://chrome.google.com/webstore/detail/jabopobgcpjmedljpbcaablpmlmfcogm)
 
 
 ### Sublime Text 3
