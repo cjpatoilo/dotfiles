@@ -179,12 +179,12 @@ Install Packages
 
 - [AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
 - [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
-- [Snippets](#)
 - [Emmet](https://packagecontrol.io/packages/Emmet/)
 - [ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
-- [HTML-CSS-JS-Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify/)
+- [JsPrettier](https://packagecontrol.io/packages/JsPrettier/)
 - [LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
 - [Placeholders](https://packagecontrol.io/packages/Placeholders/)
+- [Snippets](#)
 - [Tag](https://packagecontrol.io/packages/Tag/)
 - [Whitespace](https://packagecontrol.io/packages/Whitespace/)
 
