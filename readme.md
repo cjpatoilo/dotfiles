@@ -10,24 +10,24 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 
 ## Table of Contents
 
-- [Install Manually](src/readme.md#install-manually)
-- [Terminal](src/readme.md#terminal)
-- [Sublime Text 3](src/readme.md#sublime-text-3)
-- [Git](src/readme.md#git)
-- [Bash](src/readme.md#bash)
-- [System](src/readme.md#system)
+- [Install Manually](src/index.md#install-manually)
+- [Terminal](src/index.md#terminal)
+- [Sublime Text 3](src/index.md#sublime-text-3)
+- [Git](src/index.md#git)
+- [Bash](src/index.md#bash)
+- [System](src/index.md#system)
 
 
 ## Usage
 
-Start reading this document to see it is not difficult as you might have imagined. [Just follow the step by step](src/readme.md).
+Start reading this document to see it is not difficult as you might have imagined. [Just follow the step by step](src/index.md).
 
 ***NOTE: This tips is just a personal reference, use with care.***
 
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/dotfiles/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](.github/contributing.md).
 
 
 ## License

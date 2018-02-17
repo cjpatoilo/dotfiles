@@ -1,0 +1,43 @@
+{
+	"name": "dotfiles",
+	"version": "0.1.0",
+	"description": "A restore point for sync your settings and preferences in your toolbox.",
+	"homepage": "https://cjpatoilo.com/dotfiles",
+	"repository": "cjpatoilo/dotfiles",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"bin": "src/index.md",
+	"keywords": [
+		"boilerplate",
+		"opensource",
+		"repository",
+		"starterkit",
+		"github"
+	],
+	"ignore": [
+		"artwork.psd",
+		".appveyor.yml",
+		".editorconfig",
+		".github",
+		".gitignore",
+		".travis.yml"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"boeing": "latest",
+		"editorconfig-tools": "^0.1.1",
+		"husky": "^0.14.3",
+		"marshmallow": "latest",
+		"nyc": "^11.4.1",
+		"rimraf": "^2.6.2"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"prepush": "marshmallow -o docs -i artwork.psd -t Initify -d 'A meaningful Open Source Boilerplate – easy as cake!' -f -m && boeing docs && rimraf docs",
+		"precommit": "npm t",
+		"test": "nyc ava && editorconfig-tools check ."
+	}
+}
