@@ -8,7 +8,7 @@
 - [Install Manually](#install-manually)
 - [Terminal](#terminal)
 - [Browser Extensions](#browser-extensions)
-- [Sublime Text 3](#sublime-text-3)
+- [VS Code](#vs-code)
 - [Git](#git)
 - [Bash](#bash)
 - [System](#system)
@@ -163,104 +163,69 @@ Ruby
 - [WhatFont](https://chrome.google.com/webstore/detail/jabopobgcpjmedljpbcaablpmlmfcogm)
 
 
-### Sublime Text 3
-
-The text editor you'll fall in love with
-
-Install Package Control
-
-The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
-
-```sh
-import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-```
+### VS Code
 
 Install Packages
 
-- [AutoFileName](https://packagecontrol.io/packages/AutoFileName/)
-- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter/)
-- [Emmet](https://packagecontrol.io/packages/Emmet/)
-- [ExpandTabsOnSave](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save/)
-- [JsPrettier](https://packagecontrol.io/packages/JsPrettier/)
-- [LoremIpsum](https://packagecontrol.io/packages/LoremIpsum/)
-- [Placeholders](https://packagecontrol.io/packages/Placeholders/)
-- [Snippets](#)
-- [Tag](https://packagecontrol.io/packages/Tag/)
-- [Whitespace](https://packagecontrol.io/packages/Whitespace/)
+- Auto Close Tag
+- AutoFileName
+- AutoTrim
+- EditorConfig for VS Code
+- Flow Language Support
+- Lorem ipsum
+- Material Theme
+- Sass
+- Sublime Text Keymap
+- Terraform
+- WakaTime
+- Whitespacer
 
 Preferences Settings
 
 ```json
 {
-	"auto_complete_delay": 10,
-	"auto_complete_with_fields": true,
-	"auto_indent": true,
-	"binary_file_patterns":
-	[
-		"*.dds",
-		"*.eot",
-		"*.gif",
-		"*.ico",
-		"*.jar",
-		"*.jpeg",
-		"*.jpg",
-		"*.pdf",
-		"*.png",
-		"*.swf",
-		"*.tga",
-		"*.ttf",
-		"*.zip"
-	],
-	"bold_folder_labels": true,
-	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"convert_tabspaces_on_save": true,
-	"detect_indentation": false,
-	"expand_tabs_on_save": true,
-	"font_face": "Arial",
-	"font_options": "subpixel_antialias",
-	"font_size": 18,
-	"ha_style": "filled",
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"BracketHighlighter",
-		"DocBlockr",
-		"Vintage"
-	],
-	"indent_to_bracket": true,
-	"index_exclude_patterns":
-	[
-		"wordpress",
-		"bower_components",
-		"node_modules",
-		"plugins",
-		"platforms",
-		"lib",
-		"layout",
-		"files",
-		"engine",
-		"dist",
-		"*.log",
-		".*-cache"
-	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
-	"rulers":
-	[
-		80
-	],
-	"save_on_focus_lost": true,
-	"scroll_speed": 2,
-	"tab_completion": false,
-	"tab_size": 2,
-	"theme": "Material Brogrammer.sublime-theme",
-	"translate_tabs_to_spaces": false,
-	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true,
-	"typescript_plugin_tsc_version": "1.7.3",
-	"word_wrap": false
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 0,
+  "files.defaultLanguage": "en",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.detectIndentation": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.log": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/node_modules": true
+  },
+  "markdown.preview.fontSize": 14,
+  "materialTheme.fixIconsRunning": false,
+  "search.exclude": {
+    "**/.git": true,
+    "**/.log": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/node_modules": true
+  },
+  "window.openFilesInNewWindow": "on",
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "eq-material-theme-icons-ocean"
 }
 ```
 
