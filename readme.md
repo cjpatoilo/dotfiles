@@ -12,7 +12,8 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 
 - [Install Manually](src/index.md#install-manually)
 - [Terminal](src/index.md#terminal)
-- [Sublime Text 3](src/index.md#sublime-text-3)
+- [Browser Extensions](src/index.md#browser-extensions)
+- [VS Code](#vs-code)
 - [Git](src/index.md#git)
 - [Bash](src/index.md#bash)
 - [System](src/index.md#system)
