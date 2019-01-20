@@ -89,6 +89,7 @@ Utils
 - firefox-aurora
 - firefox-nightly
 - gitter
+- google-authenticator
 - google-chrome
 - google-chrome-canary
 - kap
