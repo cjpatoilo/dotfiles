@@ -44,8 +44,6 @@ Essentials
 
 `$ brew install`
 
-- android-sdk
-- ant
 - brew-cask
 - composer
 - git
@@ -89,7 +87,6 @@ Utils
 - firefox-aurora
 - firefox-nightly
 - gitter
-- google-authenticator
 - google-chrome
 - google-chrome-canary
 - kap
@@ -103,9 +100,9 @@ Utils
 - slack
 - sourcetree
 - spotify
-- sublime-text-3
 - telegram
 - unrarx
+- visual-studio-code
 - vlc
 - webtorrent
 
