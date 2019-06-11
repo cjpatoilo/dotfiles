@@ -10,35 +10,27 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 
 ## Table of Contents
 
-- [Install Manually](src/index.md#install-manually)
-- [Terminal](src/index.md#terminal)
-- [Browser Extensions](src/index.md#browser-extensions)
+- [Homebrew](#homebrew)
 - [VS Code](#vs-code)
-- [Git](src/index.md#git)
-- [Bash](src/index.md#bash)
-- [System](src/index.md#system)
+- [Google Chrome](#google-chrome)
+- [Github](#github)
+- [Terminal](#terminal)
+- [macOS](#macos)
 
 
 ## Usage
-
-Start reading this document to see it is not difficult as you might have imagined. [Just follow the step by step](src/index.md).
-
-***NOTE: This tips is just a personal reference, use with care.***
-
-
-## Getting Starter
 
 Start reading this document to see it is not difficult as you might have imagined. Just follow the step by step.
 
 ***NOTE: This tips is just a personal reference, use with care.***
 
-**Terminal**
+#### Homebrew
 
-- Install Homebrew
+First install Homebrew, the package manager for macOS.
 
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-**Homebrew**
+**Dependencies**
 
 - Git
 - Heroku CLI
@@ -49,7 +41,7 @@ Start reading this document to see it is not difficult as you might have imagine
 
 `brew install git heroku nvm rvm wget yarn`
 
-**Caskroom**
+**Applications**
 
 - App Cleaner
 - Authy
@@ -70,9 +62,11 @@ Start reading this document to see it is not difficult as you might have imagine
 
 `brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome flume franz logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
 
-**Caskroom Quick Look plugins**
+**Caskroom Quick Look Plugins**
 
 `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo && mv ~/Downloads/.qlgenerator > ~/Library/QuickLook && qlmanage -r`
+
+#### VS Code
 
 **VS Code Plugins**
 
@@ -129,7 +123,9 @@ After install, confirm all plugins installed:
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme"
 }
-````
+```
+
+#### Google Chrome
 
 **Google Chrome Plugins**
 
@@ -153,62 +149,33 @@ After install, confirm all plugins installed:
 - Sheets
 - Slides
 
-**Bash Profile Settings**
+#### Github
 
-```
-# Show current Git branch name in bash PS1
-source "$HOME/.gitprompt"
-PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $\[\033[0m\] "
+**SSH Settings**
 
-# Define alias
-
-alias reload="source ~/.bash_profile"
-alias cls="clear"
-alias www="cd $HOME/Www/"
-
-# Add local bin for all Homebrew stuff
-
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-
-# GPG2
-# MONGO (maybe)
-```
-
-**SSH keys Settings**
-
-1. Generating public/private rsa key pair
-<br>
+1. Generating public/private rsa key pair <br>
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
-1. Start the ssh-agent in the background
-<br>
+1. Start the ssh-agent in the background <br>
 `eval "$(ssh-agent -s)"`
 
-1. Creating config file
-<br>
+1. Creating config file <br>
 `printf "ServerAliveInterval 60\nHost github.com\nHostname ssh.github.com\nPort 443\n" > ~/.ssh/config`
 
-1. Add your SSH private key to the ssh-agent and store your passphrase in the keychain.
-<br>
+1. Add your SSH private key to the ssh-agent and store your passphrase in the keychain. <br>
 `ssh-add -K ~/.ssh/id_rsa`
 
-1. Copy the SSH key to your clipboard.
-<br>
+1. Copy the SSH key to your clipboard. <br>
 `pbcopy < ~/.ssh/id_rsa.pub`
 
-1. Now access Github SSH Settings to add the SSH key
-<br>
+1. Now access Github SSH Settings to add the SSH key <br>
 https://github.com/settings/ssh/new
 
 **GPG Settings**
 
 https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
 
-**Git**
+**Git Settings**
 
 Make it even easier version control `~/.gitconfig`
 
@@ -268,56 +235,74 @@ Make it even easier version control `~/.gitconfig`
 	trustExitCode = true
 ```
 
+#### Terminal
+
+**Bash Settings**
+
+Create `~/.bash_profile` with this content
+
+```
+# Show current Git branch name in bash PS1
+source "$HOME/.gitprompt"
+PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $\[\033[0m\] "
+
+# Define alias
+
+alias reload="source ~/.bash_profile"
+alias cls="clear"
+alias www="cd $HOME/Www/"
+
+# Add local bin for all Homebrew stuff
+
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+
+# GPG2
+# MONGO (maybe)
+```
+
+#### macOS
+
 **macOS Settings**
 
-- Finder: show all filenames extensions
-<br>
+- Finder: show all filenames extensions <br>
 `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
-- Finder: show hidden files by default
-<br>
+- Finder: show hidden files by default <br>
 `defaults write com.apple.finder AppleShowAllFiles -bool true`
 
-- Finder: show status bar
-<br>
+- Finder: show status bar <br>
 `defaults write com.apple.finder ShowStatusBar -bool true`
 
-- Finder: allow text selection in Quick Look
-<br>
+- Finder: allow text selection in Quick Look <br>
 `defaults write com.apple.finder QLEnableTextSelection -bool true`
 
-- Disable the warning when changing a file extension
-<br>
+- Disable the warning when changing a file extension <br>
 `defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
 
-- Use plain text mode for new TextEdit documents
-<br>
+- Use plain text mode for new TextEdit documents <br>
 `defaults write com.apple.TextEdit RichText -int 0`
 
-- Open and save files as UTF-8 in TextEdit
-<br>
-`defaults write com.apple.TextEdit PlainTextEncoding -int 4`
-<br>
+- Open and save files as UTF-8 in TextEdit <br>
+`defaults write com.apple.TextEdit PlainTextEncoding -int 4` <br>
 `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
 
-- Save screenshots to the desktop
-<br>
+- Save screenshots to the desktop <br>
 `defaults write com.apple.screencapture location -string "$HOME/Desktop"`
 
-- Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-<br>
+- Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF) <br>
 `defaults write com.apple.screencapture type -string "png"`
 
-- Disable shadow in screenshots
-<br>
+- Disable shadow in screenshots <br>
 `defaults write com.apple.screencapture disable-shadow -bool true`
 
-- Prevent Time Machine from prompting to use new hard drives as backup volume
-<br>
+- Prevent Time Machine from prompting to use new hard drives as backup volume <br>
 `defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
 
-- Change indexing order and disable some file types
-<br>
+- Change indexing order and disable some file types <br>
 ```
 	defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
@@ -338,16 +323,13 @@ Make it even easier version control `~/.gitconfig`
 	'{"enabled" = 0;"name" = "SOURCE";}'
 ```
 
-- Load new settings before rebuilding the index
-<br>
+- Load new settings before rebuilding the index <br>
 `killall mds`
 
-- Make sure indexing is enabled for the main volume
-<br>
+- Make sure indexing is enabled for the main volume <br>
 `sudo mdutil -i on /`
 
-- Rebuild the index from scratch
-<br>
+- Rebuild the index from scratch <br>
 `sudo mdutil -E /`
 
 
