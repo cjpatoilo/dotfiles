@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A restore point for sync your settings and preferences in your toolbox.",
   "homepage": "https://cjpatoilo.com/dotfiles",
   "repository": "cjpatoilo/dotfiles",
