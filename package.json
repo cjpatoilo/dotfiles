@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A restore point for sync your settings and preferences in your toolbox.",
   "homepage": "https://cjpatoilo.com/dotfiles",
   "repository": "cjpatoilo/dotfiles",
@@ -36,7 +36,7 @@
     "node": ">10.0.0"
   },
   "scripts": {
-    "prepush": "marshmallow -o docs -i artwork.psd -t Initify -d 'A meaningful Open Source Boilerplate – easy as cake!' -f -m && boeing docs && rimraf docs",
+    "prepush": "marshmallow -o docs -i artwork.psd -t Dotfiles -d 'A restore point for sync your settings and preferences in your toolbox.' -f -m && boeing docs && rimraf docs",
     "precommit": "npm t",
     "test": "nyc ava && editorconfig-tools check ."
   }
