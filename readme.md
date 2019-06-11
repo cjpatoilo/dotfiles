@@ -24,7 +24,7 @@ Start reading this document to see it is not difficult as you might have imagine
 
 ***NOTE: This tips is just a personal reference, use with care.***
 
-#### Homebrew
+### Homebrew
 
 First install Homebrew, the package manager for macOS.
 
@@ -66,7 +66,7 @@ First install Homebrew, the package manager for macOS.
 
 `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo && mv ~/Downloads/.qlgenerator > ~/Library/QuickLook && qlmanage -r`
 
-#### VS Code
+### VS Code
 
 **VS Code Plugins**
 
@@ -125,7 +125,7 @@ After install, confirm all plugins installed:
 }
 ```
 
-#### Google Chrome
+### Google Chrome
 
 **Google Chrome Plugins**
 
@@ -149,7 +149,7 @@ After install, confirm all plugins installed:
 - Sheets
 - Slides
 
-#### Github
+### Github
 
 **SSH Settings**
 
@@ -235,7 +235,7 @@ Make it even easier version control `~/.gitconfig`
 	trustExitCode = true
 ```
 
-#### Terminal
+### Terminal
 
 **Bash Settings**
 
@@ -264,7 +264,7 @@ export NVM_DIR="$HOME/.nvm"
 # MONGO (maybe)
 ```
 
-#### macOS
+### macOS
 
 **macOS Settings**
 
