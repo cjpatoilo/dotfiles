@@ -51,6 +51,7 @@ First install Homebrew, the package manager for macOS.
 - Google Chrome
 - Flume
 - Franz
+- LassPass
 - Logitech Presentation
 - Kap
 - Sketch
@@ -60,7 +61,7 @@ First install Homebrew, the package manager for macOS.
 - VS Code
 - VLC
 
-`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome flume franz logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
+`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome flume franz lasspass logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
 
 **Caskroom Quick Look Plugins**
 
@@ -83,7 +84,7 @@ First install Homebrew, the package manager for macOS.
 - Auto Close Tag
 - Auto Complete Tag
 - Auto Rename Tag
-- code Runner
+- Code Runner
 - Terminal
 - Autofilename
 - DotENV
