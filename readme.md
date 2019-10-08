@@ -146,13 +146,6 @@ Google Chrome is a cross-platform web browser developed by Google.
 - [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en)
 
-**Apps**
-
-- Docs
-- Postman
-- Sheets
-- Slides
-
 ### Github
 
 GitHub is provides hosting for software development version control using Git.
