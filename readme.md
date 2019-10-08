@@ -26,7 +26,7 @@ Start reading this document to see it is not difficult as you might have imagine
 
 ### Homebrew
 
-First install Homebrew, the package manager for macOS.
+Homebrew is the package manager for macOS (or Linux).
 
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
@@ -40,7 +40,7 @@ First install Homebrew, the package manager for macOS.
 
 `brew install git heroku nvm wget yarn`
 
-**Applications**
+**Apps**
 
 - App Cleaner
 - Authy
@@ -62,13 +62,15 @@ First install Homebrew, the package manager for macOS.
 
 `brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome flume franz lasspass logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
 
-**Caskroom Quick Look Plugins**
+**Plugins**
 
 `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo && mv ~/Downloads/.qlgenerator > ~/Library/QuickLook && qlmanage -r`
 
 ### Visual Studio Code
 
-**Visual Studio Code Plugins**
+Visual Studio Code is a source-code editor developed by Microsoft.
+
+**Plugins**
 
 - Better Comments
 - Path Intellisense
@@ -104,7 +106,7 @@ After install, confirm all plugins installed:
 
 `code --list-extensions`
 
-**Visual Studio Code Settings**
+**Settings**
 
 ```
 {
@@ -127,7 +129,9 @@ After install, confirm all plugins installed:
 
 ### Google Chrome
 
-**Google Chrome Plugins**
+Google Chrome is a cross-platform web browser developed by Google.
+
+**Plugins**
 
 - [Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en)
 - [Google Docs Offline](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
@@ -142,7 +146,7 @@ After install, confirm all plugins installed:
 - [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en)
 
-**Google Chrome Apps**
+**Apps**
 
 - Docs
 - Postman
@@ -150,6 +154,8 @@ After install, confirm all plugins installed:
 - Slides
 
 ### Github
+
+GitHub is provides hosting for software development version control using Git.
 
 **SSH Settings**
 
@@ -214,7 +220,7 @@ Make it even easier version control `~/.gitconfig`
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
 [core]
-	excludesfile = /Users/cjpatoilo/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [commit]
 	template = ~/.stCommitMsg
@@ -237,9 +243,11 @@ Make it even easier version control `~/.gitconfig`
 
 ### Terminal
 
+The Terminal is an interface that allows you to access the command line from the GUI.
+
 **Bash Settings**
 
-Create `~/.bash_profile` with this content
+First create Bash Profile file `mkdir ~/.bash_profile` and add this content:
 
 ```
 # Show current Git branch name in bash PS1
@@ -261,14 +269,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
 # GPG2
-# MONGO (maybe)
+
 ```
 
 ### macOS
 
-**macOS Settings**
-
-First install the Command Line Tools.
+macOS is a series of graphical operating systems developed and marketed by Apple Inc.
 
 `xcode-select --install`
 
@@ -346,4 +352,4 @@ Want to contribute? Follow these [recommendations](.github/contributing.md).
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://cjpatoilo.com/license).
