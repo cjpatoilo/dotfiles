@@ -11,7 +11,7 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 ## Table of Contents
 
 - [Homebrew](#homebrew)
-- [VS Code](#vs-code)
+- [Visual Studio Code](#vs-code)
 - [Google Chrome](#google-chrome)
 - [Github](#github)
 - [Terminal](#terminal)
@@ -58,7 +58,7 @@ First install Homebrew, the package manager for macOS.
 - Slack
 - Sourcetree
 - Spotify
-- VS Code
+- Visual Studio Code
 - VLC
 
 `brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome flume franz lasspass logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
@@ -67,9 +67,9 @@ First install Homebrew, the package manager for macOS.
 
 `brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo && mv ~/Downloads/.qlgenerator > ~/Library/QuickLook && qlmanage -r`
 
-### VS Code
+### Visual Studio Code
 
-**VS Code Plugins**
+**Visual Studio Code Plugins**
 
 - Better Comments
 - Path Intellisense
@@ -105,7 +105,7 @@ After install, confirm all plugins installed:
 
 `code --list-extensions`
 
-**VS Code Settings**
+**Visual Studio Code Settings**
 
 ```
 {
