@@ -35,11 +35,10 @@ First install Homebrew, the package manager for macOS.
 - Git
 - Heroku CLI
 - nvm
-- rvm
 - Wget
 - Yarn
 
-`brew install git heroku nvm rvm wget yarn`
+`brew install git heroku nvm wget yarn`
 
 **Applications**
 
