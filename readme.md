@@ -11,8 +11,8 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 ## Table of Contents
 
 - [Homebrew](#homebrew)
-- [Visual Studio Code](#vs-code)
-- [Google Chrome](#google-chrome)
+- [Visual Studio Code](#visualstudiocode)
+- [Google Chrome](#googlechrome)
 - [Github](#github)
 - [Terminal](#terminal)
 - [macOS](#macos)
