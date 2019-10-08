@@ -269,6 +269,12 @@ export NVM_DIR="$HOME/.nvm"
 
 **macOS Settings**
 
+First install the Command Line Tools.
+
+`xcode-select --install`
+
+**macOS Settings**
+
 - Finder: show all filenames extensions <br>
 `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
