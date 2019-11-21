@@ -33,12 +33,11 @@ Homebrew is the package manager for macOS (or Linux).
 **Dependencies**
 
 - Git
-- Heroku CLI
 - nvm
 - Wget
 - Yarn
 
-`brew install git heroku nvm wget yarn`
+`brew install git nvm wget yarn`
 
 **Apps**
 
