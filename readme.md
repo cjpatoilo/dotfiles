@@ -295,7 +295,7 @@ macOS is a series of graphical operating systems developed and marketed by Apple
 `defaults write com.apple.TextEdit PlainTextEncoding -int 4` <br>
 `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
 
-- Save screenshots to the desktop <br>
+- Save screenshots to the downloads <br>
 `defaults write com.apple.screencapture location -string "$HOME/Downloads"`
 
 - Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF) <br>
