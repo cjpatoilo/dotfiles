@@ -48,7 +48,7 @@ Homebrew is the package manager for macOS (or Linux).
 - Docker
 - Google Chrome
 - Franz
-- LassPass
+- LastPass
 - Logitech Presentation
 - Kap
 - Sketch
@@ -58,7 +58,7 @@ Homebrew is the package manager for macOS (or Linux).
 - Visual Studio Code
 - VLC
 
-`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome franz lasspass logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
+`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome franz lastpass logitech-presentation kap sketch slack sourcetree spotify visual-studio-code vlc`
 
 **Plugins**
 
