@@ -53,6 +53,7 @@ Homebrew is the package manager for macOS (or Linux).
 - Kap
 - Sketch
 - Slack
+- Steam
 - Sourcetree
 - Spotify
 - Visual Studio Code
