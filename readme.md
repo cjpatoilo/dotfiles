@@ -53,13 +53,14 @@ Homebrew is the package manager for macOS (or Linux).
 - Kap
 - Sketch
 - Slack
+- Spectacle
 - Steam
 - Sourcetree
 - Spotify
 - Visual Studio Code
 - VLC
 
-`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome franz lastpass logitech-presentation kap sketch slack steam sourcetree spotify visual-studio-code vlc`
+`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome franz lastpass logitech-presentation kap sketch slack spectacle steam sourcetree spotify visual-studio-code vlc`
 
 **Plugins**
 
