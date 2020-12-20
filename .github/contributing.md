@@ -70,25 +70,25 @@ Look at how the code is being maintained, we must always be consistent. We try t
 .selector-b,
 .selector-c,
 .selector-d[type='text']
-	box-sizing: border-box
-	color: #333
-	content: ''
-	display: inline-block
-	font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
-	margin-bottom: 0
-	margin-left: 5.0rem
+  box-sizing: border-box
+  color: #333
+  content: ''
+  display: inline-block
+  font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
+  margin-bottom: 0
+  margin-left: 5.0rem
 
-	.other-selector-a
-		background: #fff
+  .other-selector-a
+    background: #fff
 
-		.other-selector-b
-			background: #fff
+    .other-selector-b
+      background: #fff
 
-		&.increasing-the-specificity
-			color: #000
+    &.increasing-the-specificity
+      color: #000
 ```
 
-*NOTE: The best way to learn about that is to just install it and give it a try on your code. This project uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
+_NOTE: The best way to learn about that is to just install it and give it a try on your code._
 
 ## Test
 
