@@ -2,11 +2,9 @@
 
 | A restore point for sync your settings and preferences in your toolbox.
 
-
 ## Why it's awesome
 
 Dotfiles provides a fast setup for backup, restore, and sync the prefs and settings for your toolbox. Dotfiles might be the most important files on your machine and I hope it helps you as much as it helps me!
-
 
 ## Table of Contents
 
@@ -17,12 +15,11 @@ Dotfiles provides a fast setup for backup, restore, and sync the prefs and setti
 - [Terminal](#terminal)
 - [macOS](#macos)
 
-
 ## Usage
 
 Start reading this document to see it is not difficult as you might have imagined. Just follow the step by step.
 
-***NOTE: This tips is just a personal reference, use with care.***
+**_NOTE: This tips is just a personal reference, use with care._**
 
 ### Homebrew
 
@@ -154,22 +151,22 @@ GitHub is provides hosting for software development version control using Git.
 **SSH Settings**
 
 1. Generating public/private rsa key pair <br>
-`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+   `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 1. Start the ssh-agent in the background <br>
-`eval "$(ssh-agent -s)"`
+   `eval "$(ssh-agent -s)"`
 
 1. Creating config file <br>
-`printf "ServerAliveInterval 60\nHost github.com\nHostname ssh.github.com\nPort 443\n" > ~/.ssh/config`
+   `printf "ServerAliveInterval 60\nHost github.com\nHostname ssh.github.com\nPort 443\n" > ~/.ssh/config`
 
 1. Add your SSH private key to the ssh-agent and store your passphrase in the keychain. <br>
-`ssh-add -K ~/.ssh/id_rsa`
+   `ssh-add -K ~/.ssh/id_rsa`
 
 1. Copy the SSH key to your clipboard. <br>
-`pbcopy < ~/.ssh/id_rsa.pub`
+   `pbcopy < ~/.ssh/id_rsa.pub`
 
 1. Now access Github SSH Settings to add the SSH key <br>
-https://github.com/settings/ssh/new
+   https://github.com/settings/ssh/new
 
 **GPG Settings**
 
@@ -181,58 +178,58 @@ Make it even easier version control `~/.gitconfig`
 
 ```
 [user]
-	name = CJ Patoilo
-	email = cjpatoilo@gmail.com
-	signingkey = "Your Sign In Key"
+  name = CJ Patoilo
+  email = cjpatoilo@gmail.com
+  signingkey = "Your Sign In Key"
 
 [branch]
-	autosetupmerge = always
+  autosetupmerge = always
 
 [alias]
-	ci = commit -am
-	lo = log --pretty=format:'%an - %h %s %ar'
-	st = status
-	br = branch
-	sw = show
-	df = diff
-	fe = fetch
-	mg = merge
-	rb = rebase
-	rt = remote -v
-	co = checkout
-	po = push origin
-	pu = pull origin
-	pom = push origin master
-	pum = pull origin master
-	com = checkout master
-	pod = push origin develop
-	pud = pull origin develop
-	cod = checkout develop
-	pog = push origin gh-pages
-	pug = pull origin gh-pages
-	cog = checkout gh-pages
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  ci = commit -am
+  lo = log --pretty=format:'%an - %h %s %ar'
+  st = status
+  br = branch
+  sw = show
+  df = diff
+  fe = fetch
+  mg = merge
+  rb = rebase
+  rt = remote -v
+  co = checkout
+  po = push origin
+  pu = pull origin
+  pom = push origin master
+  pum = pull origin master
+  com = checkout master
+  pod = push origin develop
+  pud = pull origin develop
+  cod = checkout develop
+  pog = push origin gh-pages
+  pug = pull origin gh-pages
+  cog = checkout gh-pages
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
 [core]
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 
 [commit]
-	template = ~/.stCommitMsg
+  template = ~/.stCommitMsg
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	trustExitCode = true
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  trustExitCode = true
+  path =
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 ```
 
 ### Terminal
@@ -275,74 +272,73 @@ macOS is a series of graphical operating systems developed and marketed by Apple
 **macOS Settings**
 
 - Finder: show all filenames extensions <br>
-`defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
+  `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
 - Finder: show hidden files by default <br>
-`defaults write com.apple.finder AppleShowAllFiles -bool true`
+  `defaults write com.apple.finder AppleShowAllFiles -bool true`
 
 - Finder: show status bar <br>
-`defaults write com.apple.finder ShowStatusBar -bool true`
+  `defaults write com.apple.finder ShowStatusBar -bool true`
 
 - Finder: allow text selection in Quick Look <br>
-`defaults write com.apple.finder QLEnableTextSelection -bool true`
+  `defaults write com.apple.finder QLEnableTextSelection -bool true`
 
 - Disable the warning when changing a file extension <br>
-`defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
+  `defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
 
 - Use plain text mode for new TextEdit documents <br>
-`defaults write com.apple.TextEdit RichText -int 0`
+  `defaults write com.apple.TextEdit RichText -int 0`
 
 - Open and save files as UTF-8 in TextEdit <br>
-`defaults write com.apple.TextEdit PlainTextEncoding -int 4` <br>
-`defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
+  `defaults write com.apple.TextEdit PlainTextEncoding -int 4` <br>
+  `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
 
 - Save screenshots to the downloads <br>
-`defaults write com.apple.screencapture location -string "$HOME/Downloads"`
+  `defaults write com.apple.screencapture location -string "$HOME/Downloads"`
 
 - Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF) <br>
-`defaults write com.apple.screencapture type -string "png"`
+  `defaults write com.apple.screencapture type -string "png"`
 
 - Disable shadow in screenshots <br>
-`defaults write com.apple.screencapture disable-shadow -bool true`
+  `defaults write com.apple.screencapture disable-shadow -bool true`
 
 - Prevent Time Machine from prompting to use new hard drives as backup volume <br>
-`defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
+  `defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
 
 - Change indexing order and disable some file types <br>
+
 ```
-	defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}'
+  defaults write com.apple.spotlight orderedItems -array \
+  '{"enabled" = 1;"name" = "APPLICATIONS";}' \
+  '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+  '{"enabled" = 1;"name" = "DIRECTORIES";}' \
+  '{"enabled" = 1;"name" = "PDF";}' \
+  '{"enabled" = 1;"name" = "FONTS";}' \
+  '{"enabled" = 0;"name" = "DOCUMENTS";}' \
+  '{"enabled" = 0;"name" = "MESSAGES";}' \
+  '{"enabled" = 0;"name" = "CONTACT";}' \
+  '{"enabled" = 0;"name" = "EVENT_TODO";}' \
+  '{"enabled" = 0;"name" = "IMAGES";}' \
+  '{"enabled" = 0;"name" = "BOOKMARKS";}' \
+  '{"enabled" = 0;"name" = "MUSIC";}' \
+  '{"enabled" = 0;"name" = "MOVIES";}' \
+  '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+  '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+  '{"enabled" = 0;"name" = "SOURCE";}'
 ```
 
 - Load new settings before rebuilding the index <br>
-`killall mds`
+  `killall mds`
 
 - Make sure indexing is enabled for the main volume <br>
-`sudo mdutil -i on /`
+  `sudo mdutil -i on /`
 
 - Rebuild the index from scratch <br>
-`sudo mdutil -E /`
-
+  `sudo mdutil -E /`
 
 ## Contributing
 
 Want to contribute? Follow these [recommendations](.github/contributing.md).
-
 
 ## License
 
