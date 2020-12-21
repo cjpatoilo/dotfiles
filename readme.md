@@ -271,70 +271,152 @@ macOS is a series of graphical operating systems developed and marketed by Apple
 
 **macOS Settings**
 
-- Finder: show all filenames extensions <br>
+- LockScreen: Set Lock Message to show on login screen <br>
+  `defaults write com.apple.loginwindow LoginwindowText -string "Found me? Shoot a mail to cjpatoilo@gmail.com to return me. Thanks!"`
+
+- Bluetooth: Increase sound quality for Bluetooth headphones/headsets <br>
+  `defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40`
+
+- Trackpad: Enable extra multifinger gestures <br>
+  `defaults write com.apple.dock showMissionControlGestureEnabled -bool true`
+  `defaults write com.apple.dock showAppExposeGestureEnabled -bool true`
+  `defaults write com.apple.dock showDesktopGestureEnabled -bool true`
+  `defaults write com.apple.dock showLaunchpadGestureEnabled -bool true`
+
+- Trackpad: Enable right click with two fingers <br>
+  `defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true`
+  `defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true`
+  `defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true`
+  `defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true`
+
+- Trackpad: Increment tracking speed <br>
+  `defaults write NSGlobalDomain com.apple.trackpad.scaling -float 0.875`
+
+- ScrollWheel: Increment tracking speed <br>
+  `defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.215`
+
+- Mouse: Increment tracking speed <br>
+  `defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton`
+
+- Mouse: Allow right click button <br>
+  `defaults write NSGlobalDomain com.apple.mouse.scaling -float 2.5`
+
+- Finder: Show all filenames extensions <br>
   `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
 
-- Finder: show hidden files by default <br>
+- Finder: Show hidden files by default <br>
   `defaults write com.apple.finder AppleShowAllFiles -bool true`
 
-- Finder: show status bar <br>
+- Finder: Show status bar <br>
   `defaults write com.apple.finder ShowStatusBar -bool true`
 
-- Finder: allow text selection in Quick Look <br>
-  `defaults write com.apple.finder QLEnableTextSelection -bool true`
+- Finder: Show path bar <br>
+  `defaults write com.apple.finder ShowPathbar -bool true`
 
-- Disable the warning when changing a file extension <br>
+- Finder: Display full POSIX path as Finder window title <br>
+  `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true`
+
+- Finder: Keep folders on top when sorting by name <br>
+  `defaults write com.apple.finder _FXSortFoldersFirst -bool true`
+
+- Finder: When performing a search, search the current folder by default <br>
+  `defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"`
+
+- Finder: Disable the warning when changing a file extension <br>
   `defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
 
-- Use plain text mode for new TextEdit documents <br>
+- Finder: Avoid creating .DS_Store files on network or USB volumes <br>
+  `defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true`
+  `defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true`
+
+- Finder: Allow text selection in Quick Look <br>
+  `defaults write com.apple.finder QLEnableTextSelection -bool true`
+
+- Finder: Disable the warning when changing a file extension <br>
+  `defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false`
+
+- TextEdit: Use plain text mode for new TextEdit documents <br>
   `defaults write com.apple.TextEdit RichText -int 0`
 
-- Open and save files as UTF-8 in TextEdit <br>
+- TextEdit: Open and save files as UTF-8 in TextEdit <br>
   `defaults write com.apple.TextEdit PlainTextEncoding -int 4` <br>
   `defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4`
 
-- Save screenshots to the downloads <br>
+- Screen: Save screenshots to the downloads <br>
   `defaults write com.apple.screencapture location -string "$HOME/Downloads"`
 
-- Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF) <br>
+- Screen: Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF) <br>
   `defaults write com.apple.screencapture type -string "png"`
 
-- Disable shadow in screenshots <br>
+- Screen: Disable shadow in screenshots <br>
   `defaults write com.apple.screencapture disable-shadow -bool true`
 
-- Prevent Time Machine from prompting to use new hard drives as backup volume <br>
+- Spotlight: Change indexing order and disable some search results <br>
+
+  ```
+    defaults write com.apple.spotlight orderedItems -array \
+      '{"enabled" = 1;"name" = "APPLICATIONS";}' \
+      '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+      '{"enabled" = 1;"name" = "DIRECTORIES";}' \
+      '{"enabled" = 1;"name" = "PDF";}' \
+      '{"enabled" = 1;"name" = "FONTS";}' \
+      '{"enabled" = 0;"name" = "DOCUMENTS";}' \
+      '{"enabled" = 0;"name" = "MESSAGES";}' \
+      '{"enabled" = 0;"name" = "CONTACT";}' \
+      '{"enabled" = 0;"name" = "EVENT_TODO";}' \
+      '{"enabled" = 0;"name" = "IMAGES";}' \
+      '{"enabled" = 0;"name" = "BOOKMARKS";}' \
+      '{"enabled" = 0;"name" = "MUSIC";}' \
+      '{"enabled" = 0;"name" = "MOVIES";}' \
+      '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+      '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+      '{"enabled" = 0;"name" = "SOURCE";}' \
+      '{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
+      '{"enabled" = 0;"name" = "MENU_OTHER";}' \
+      '{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
+      '{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
+      '{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
+      '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+  ```
+
+- Spotlight: Load new settings before rebuilding the index <br>
+  `killall mds > /dev/null 2>&1`
+
+- Spotlight: Make sure indexing is enabled for the main volume <br>
+  `sudo mdutil -i on / > /dev/null`
+
+- Spotlight: Rebuild the index from scratch <br>
+  `sudo mdutil -E / > /dev/null`
+
+- Terminal: Only use UTF-8 in Terminal.app <br>
+  `defaults write com.apple.terminal StringEncodings -array 4`
+
+- Terminal: Enable Secure Keyboard Entry in Terminal.app <br>
+  `defaults write com.apple.terminal SecureKeyboardEntry -bool true`
+
+- Terminal: Disable the annoying line marks <br>
+  `defaults write com.apple.Terminal ShowLineMarks -int 0`
+
+- Time Machine: Prevent Time Machine from prompting to use new hard drives as backup volume <br>
   `defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true`
 
-- Change indexing order and disable some file types <br>
+- Time Machine: Disable local Time Machine backups <br>
+  `hash tmutil &> /dev/null && sudo tmutil disablelocal`
 
-```
-  defaults write com.apple.spotlight orderedItems -array \
-  '{"enabled" = 1;"name" = "APPLICATIONS";}' \
-  '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-  '{"enabled" = 1;"name" = "DIRECTORIES";}' \
-  '{"enabled" = 1;"name" = "PDF";}' \
-  '{"enabled" = 1;"name" = "FONTS";}' \
-  '{"enabled" = 0;"name" = "DOCUMENTS";}' \
-  '{"enabled" = 0;"name" = "MESSAGES";}' \
-  '{"enabled" = 0;"name" = "CONTACT";}' \
-  '{"enabled" = 0;"name" = "EVENT_TODO";}' \
-  '{"enabled" = 0;"name" = "IMAGES";}' \
-  '{"enabled" = 0;"name" = "BOOKMARKS";}' \
-  '{"enabled" = 0;"name" = "MUSIC";}' \
-  '{"enabled" = 0;"name" = "MOVIES";}' \
-  '{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-  '{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-  '{"enabled" = 0;"name" = "SOURCE";}'
-```
+- Activity Monitor: Show the main window when launching Activity Monitor <br>
+  `defaults write com.apple.ActivityMonitor OpenMainWindow -bool true`
 
-- Load new settings before rebuilding the index <br>
-  `killall mds`
+- Activity Monitor: Visualize CPU usage in the Activity Monitor Dock icon <br>
+  `defaults write com.apple.ActivityMonitor IconType -int 5`
 
-- Make sure indexing is enabled for the main volume <br>
-  `sudo mdutil -i on /`
+- Activity Monitor: Show all processes in Activity Monitor <br>
+  `defaults write com.apple.ActivityMonitor ShowCategory -int 0`
 
-- Rebuild the index from scratch <br>
-  `sudo mdutil -E /`
+- Activity Monitor: Sort Activity Monitor results by CPU usage <br>
+  `defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"`
+  `defaults write com.apple.ActivityMonitor SortDirection -int 0`
+
+- Power:
 
 ## Contributing
 
