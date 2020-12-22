@@ -29,12 +29,13 @@ Homebrew is the package manager for macOS (or Linux).
 
 **Dependencies**
 
-- Git
-- nvm
-- Wget
-- Yarn
+- Git Version Control
+- Node Version Manager
+- Ruby Version Manager
+- GNU Wget
+- Yarn Package Manager
 
-`brew install git nvm wget yarn`
+`brew install git nvm rvm wget yarn`
 
 **Apps**
 
@@ -442,8 +443,6 @@ macOS is a series of graphical operating systems developed and marketed by Apple
 - Activity Monitor: Sort Activity Monitor results by CPU usage <br>
   `defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"`
   `defaults write com.apple.ActivityMonitor SortDirection -int 0`
-
-- Power:
 
 ## Contributing
 
