@@ -265,7 +265,7 @@ The Terminal is an interface that allows you to access the command line from the
 
 **Bash Settings**
 
-First create Bash Profile file `mkdir ~/.bash_profile` and add this content:
+First create Bash Profile file `touch ~/.bash_profile` and add this content:
 
 ```
 # Show current Git branch name in bash PS1
