@@ -39,25 +39,21 @@ Homebrew is the package manager for macOS (or Linux).
 **Apps**
 
 - App Cleaner
-- Authy
 - Browser Stack
 - Caffeine
 - Docker
 - Google Chrome
+- Figma
 - Franz
-- LastPass
 - Logitech Presentation
 - Kap
+- Rectangle
+- Sensei
 - Sketch
-- Slack
-- Spectacle
-- Steam
 - Sourcetree
-- Spotify
 - Visual Studio Code
-- VLC
 
-`brew cask install appcleaner authy browserstacklocal caffeine docker google-chrome franz lastpass logitech-presentation kap sketch slack spectacle steam sourcetree spotify visual-studio-code vlc`
+`brew cask install appcleaner browserstacklocal caffeine docker google-chrome figma franz logitech-presentation kap rectangle sensei sketch sourcetree visual-studio-code`
 
 **Plugins**
 
@@ -141,10 +137,8 @@ Google Chrome is a cross-platform web browser developed by Google.
 - [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg)
 - [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)
-- [LastPass](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
-- [Authy](https://chrome.google.com/webstore/detail/authy-chrome-extension/fhgenkpocbhhddlgkjnfghpjanffonno)
 
-### Github
+### GitHub
 
 GitHub is provides hosting for software development version control using Git.
 
@@ -165,12 +159,45 @@ GitHub is provides hosting for software development version control using Git.
 1. Copy the SSH key to your clipboard. <br>
    `pbcopy < ~/.ssh/id_rsa.pub`
 
-1. Now access Github SSH Settings to add the SSH key <br>
+1. Now access GitHub SSH Settings to add the SSH key. <br>
    https://github.com/settings/ssh/new
 
 **GPG Settings**
 
-https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
+1. Download and install the GPG command line tools. <br>
+   `brew install gpg`
+
+1. Generate a GPG key pair. <br>
+   `gpg --full-generate-key`
+
+1. Enter to accept the default kind of key <br>
+   `RSA`
+
+1. Enter the desired key size in bits. <br>
+   `4096`
+   
+1. Enter the length of time the key should be valid. <br>
+   Press Enter to specify the default selection, indicating that the key doesn't expire.
+
+1. Enter your GitHub email address. <br>
+   `name@email.com`
+
+1. Copy the GPG keys ID from the list of GPG keys. In this example, the GPG key ID is `3AA5C34371567BD2`. <br>
+   ```
+   $ gpg --list-secret-keys --keyid-format LONG
+
+   /Users/hubot/.gnupg/secring.gpg
+   ------------------------------------
+   sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+   uid                          Hubot 
+   ssb   4096R/42B317FD4BA89E7A 2016-03-10
+   ```
+
+1. Paste your GPG Key Id.
+   `gpg --armor --export 3AA5C34371567BD2`
+
+1. Copy your GPG key to add in your GitHub account.
+   https://github.com/settings/gpg/new
 
 **Git Settings**
 
