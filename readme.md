@@ -341,9 +341,6 @@ macOS is a series of graphical operating systems developed and marketed by Apple
 - Finder: Show path bar <br>
   `defaults write com.apple.finder ShowPathbar -bool true`
 
-- Finder: Display full POSIX path as Finder window title <br>
-  `defaults write com.apple.finder _FXShowPosixPathInTitle -bool true`
-
 - Finder: Keep folders on top when sorting by name <br>
   `defaults write com.apple.finder _FXSortFoldersFirst -bool true`
 
