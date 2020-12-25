@@ -327,7 +327,7 @@ macOS is a series of graphical operating systems developed and marketed by Apple
   `defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton`
 
 - Mouse: Allow right click button <br>
-  `defaults write NSGlobalDomain com.apple.mouse.scaling -float 2.5`
+  `defaults write NSGlobalDomain com.apple.mouse.scaling -int 3`
 
 - Finder: Show all filenames extensions <br>
   `defaults write NSGlobalDomain AppleShowAllExtensions -bool true`
