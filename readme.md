@@ -29,32 +29,30 @@ Homebrew is the package manager for macOS (or Linux).
 
 **Dependencies**
 
+- asdf (Manage multiple runtime versions)
 - Git Version Control
-- Node Version Manager
-- Ruby Version Manager
-- GNU Wget
-- Yarn Package Manager
 
-`brew install git nvm rvm wget yarn`
+`brew install asdf git`
 
 **Apps**
 
-- App Cleaner
+- AppCleaner
 - Browser Stack
 - Caffeine
 - Docker
-- Google Chrome
 - Figma
 - Franz
-- Logitech Presentation
+- Google Chrome
 - Kap
+- Logitech Presentation
+- Pliim
 - Rectangle
-- Sensei
+- Slack
 - Sketch
 - Sourcetree
 - Visual Studio Code
 
-`brew cask install appcleaner browserstacklocal caffeine docker google-chrome figma franz logitech-presentation kap rectangle sensei sketch sourcetree visual-studio-code`
+`brew install --cask appcleaner browserstacklocal caffeine docker figma franz google-chrome kap logitech-presentation pliim rectangle slack sketch sourcetree visual-studio-code`
 
 **Plugins**
 
@@ -66,35 +64,50 @@ Visual Studio Code is a source-code editor developed by Microsoft.
 
 **Plugins**
 
-- Better Comments
-- Path Intellisense
-- Git Ignore
-- ESlint
-- Whitespacer
-- Dracula Theme
-- Gitlens
-- EditorConfig
-- npm script
-- Prettier
 - Auto Close Tag
 - Auto Complete Tag
 - Auto Rename Tag
-- Code Runner
-- Terminal
-- Autofilename
-- DotENV
-- Sublime Keybindings
-- Typescript TSlint Plugin
-- Debugger for Chrome
+- Auto Filename
 - Autotrim
-- Material Icon Theme
+- Better Comments
+- Browser Preview
+- Code Intellicode
+- Code Runner
 - Code Settings Sync
-- Lorem Ipsum
-- Wakatime
-- JavaScript Snippets
+- Debugger for Chrome
+- Docker
+- DotENV
+- Dracula Theme
+- EditorConfig
+- ESlint
+- Git Lens
+- Git Ignore
+- GraphQL
 - HTML CSS Class Completion
+- Java
+- JavaScript Snippets
+- Jupyter
+- LiveShare
+- Lorem Ipsum
+- Maven
+- npm script
+- Path Intellisense
+- Prettier
+- Python
+- Remote Containers
+- Ruby
+- Run On Save
+- Sass Indented
+- Styled Components
+- Stylus
+- Sublime Keybindings
+- Terminal
+- TypeScript TSlint Plugin
+- Material Icon Theme
+- Wakatime
+- Whitespacer
 
-`code --install-extension aaron-bond.better-comments && code --install-extension auchenberg.vscode-browser-preview && code --install-extension christian-kohler.path-intellisense && code --install-extension codezombiech.gitignore && code --install-extension dbaeumer.vscode-eslint && code --install-extension deerawan.vscode-whitespacer && code --install-extension dracula-theme.theme-dracula && code --install-extension eamodio.gitlens && code --install-extension EditorConfig.EditorConfig && code --install-extension eg2.vscode-npm-script && code --install-extension emeraldwalk.RunOnSave && code --install-extension esbenp.prettier-vscode && code --install-extension formulahendry.auto-close-tag && code --install-extension formulahendry.auto-complete-tag && code --install-extension formulahendry.auto-rename-tag && code --install-extension formulahendry.code-runner && code --install-extension formulahendry.terminal && code --install-extension JerryHong.autofilename && code --install-extension jpoissonnier.vscode-styled-components && code --install-extension mikestead.dotenv && code --install-extension ms-azuretools.vscode-docker && code --install-extension ms-python.python && code --install-extension ms-toolsai.jupyter && code --install-extension ms-vscode-remote.remote-containers && code --install-extension ms-vscode.sublime-keybindings && code --install-extension ms-vscode.vscode-typescript-tslint-plugin && code --install-extension ms-vsliveshare.vsliveshare && code --install-extension msjsdiag.debugger-for-chrome && code --install-extension NathanRidley.autotrim && code --install-extension PKief.material-icon-theme && code --install-extension redhat.java && code --install-extension Shan.code-settings-sync && code --install-extension sysoev.language-stylus && code --install-extension Tyriar.lorem-ipsum && code --install-extension VisualStudioExptTeam.vscodeintellicode && code --install-extension vscjava.vscode-java-debug && code --install-extension vscjava.vscode-java-dependency && code --install-extension vscjava.vscode-java-pack && code --install-extension vscjava.vscode-java-test && code --install-extension vscjava.vscode-maven && code --install-extension WakaTime.vscode-wakatime && code --install-extension xabikos.JavaScriptSnippets && code --install-extension Zignd.html-css-class-completion`
+`code --install-extension aaron-bond.better-comments && code --install-extension auchenberg.vscode-browser-preview && code --install-extension christian-kohler.path-intellisense && code --install-extension codezombiech.gitignore && code --install-extension dbaeumer.vscode-eslint && code --install-extension deerawan.vscode-whitespacer && code --install-extension dracula-theme.theme-dracula && code --install-extension eamodio.gitlens && code --install-extension EditorConfig.EditorConfig && code --install-extension eg2.vscode-npm-script && code --install-extension emeraldwalk.RunOnSave && code --install-extension esbenp.prettier-vscode && code --install-extension formulahendry.auto-close-tag && code --install-extension formulahendry.auto-complete-tag && code --install-extension formulahendry.auto-rename-tag && code --install-extension formulahendry.code-runner && code --install-extension formulahendry.terminal && code --install-extension GraphQL.vscode-graphql && code --install-extension JerryHong.autofilename && code --install-extension jpoissonnier.vscode-styled-components && code --install-extension mikestead.dotenv && code --install-extension ms-azuretools.vscode-docker && code --install-extension ms-python.python && code --install-extension ms-toolsai.jupyter && code --install-extension ms-vscode-remote.remote-containers && code --install-extension ms-vscode.sublime-keybindings && code --install-extension ms-vscode.vscode-typescript-tslint-plugin && code --install-extension ms-vsliveshare.vsliveshare && code --install-extension msjsdiag.debugger-for-chrome && code --install-extension NathanRidley.autotrim && code --install-extension PKief.material-icon-theme && code --install-extension rebornix.ruby && code --install-extension redhat.java && code --install-extension Shan.code-settings-sync && code --install-extension syler.sass-indented && code --install-extension sysoev.language-stylus && code --install-extension Tyriar.lorem-ipsum && code --install-extension VisualStudioExptTeam.vscodeintellicode && code --install-extension vscjava.vscode-java-debug && code --install-extension vscjava.vscode-java-dependency && code --install-extension vscjava.vscode-java-pack && code --install-extension vscjava.vscode-java-test && code --install-extension vscjava.vscode-maven && code --install-extension WakaTime.vscode-wakatime && code --install-extension wingrunr21.vscode-ruby && code --install-extension xabikos.JavaScriptSnippets && code --install-extension Zignd.html-css-class-completion`
 
 After install, confirm all plugins installed:
 
@@ -131,11 +144,9 @@ Google Chrome is a cross-platform web browser developed by Google.
 - [Grammarly for Chrome](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen)
 - [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj)
 - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
-- [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
 - [Pesticide for Chrome](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh)
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
-- [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg)
 - [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
 - [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)
 
@@ -269,26 +280,15 @@ The Terminal is an interface that allows you to access the command line from the
 First create Bash Profile file `touch ~/.bash_profile` and add this content:
 
 ```
-# Show current Git branch name in bash PS1
-source "$HOME/.gitprompt"
-PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $\[\033[0m\] "
-
-# Define alias
+source $HOME/.git-prompt.sh
+PS1="\[\033[1;36m\]\u\[\033[32m\]$(__git_ps1 " (\W/%s)")\[\033[0m\] \$ "
 
 alias reload="source ~/.bash_profile"
 alias cls="clear"
 alias www="cd $HOME/Www/"
 
-# Add local bin for all Homebrew stuff
-
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-
-# GPG2
-
 ```
 
 ### macOS
