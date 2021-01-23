@@ -281,7 +281,8 @@ First create Bash Profile file `touch ~/.bash_profile` and add this content:
 
 ```
 source $HOME/.git-prompt.sh
-PS1="\[\033[1;36m\]\u\[\033[32m\]$(__git_ps1 " (\W/%s)")\[\033[0m\] \$ "
+# PS1="\[\033[1;36m\]\u\[\033[32m\]$(__git_ps1 " (\W/%s)")\[\033[0m\] $ "
+PS1="\[\033[1;36m\]\u\[\033[32m\]\$(__git_ps1)\[\033[0m\] $ "
 
 alias cls="clear"
 alias reload="source $HOME/.bash_profile"
