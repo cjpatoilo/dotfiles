@@ -283,12 +283,14 @@ First create Bash Profile file `touch ~/.bash_profile` and add this content:
 source $HOME/.git-prompt.sh
 PS1="\[\033[1;36m\]\u\[\033[32m\]$(__git_ps1 " (\W/%s)")\[\033[0m\] \$ "
 
-alias reload="source ~/.bash_profile"
 alias cls="clear"
+alias reload="source $HOME/.bash_profile"
 alias www="cd $HOME/Www/"
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+. $HOME/.asdf/asdf.sh
 ```
 
 ### macOS
