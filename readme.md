@@ -37,22 +37,23 @@ Homebrew is the package manager for macOS (or Linux).
 **Apps**
 
 - AppCleaner
-- Browser Stack
+- BrowserStack
 - Caffeine
 - Docker
 - Figma
 - Franz
-- Google Chrome
+- GoogleChrome
 - Kap
-- Logitech Presentation
+- LogitechPresentation
+- MeetingBar
 - Pliim
 - Rectangle
 - Slack
 - Sketch
 - Sourcetree
-- Visual Studio Code
+- VisualStudioCode
 
-`brew install --cask appcleaner browserstacklocal caffeine docker figma franz google-chrome kap logitech-presentation pliim rectangle slack sketch sourcetree visual-studio-code`
+`brew install --cask appcleaner browserstacklocal caffeine docker figma franz google-chrome kap meetingbar logitech-presentation pliim rectangle slack sketch sourcetree visual-studio-code`
 
 **Plugins**
 
